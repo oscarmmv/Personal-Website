@@ -108,7 +108,7 @@ h3 { padding-top: 15px; padding-bottom: 30px;}
 /* Skills */
 .skill {
   margin-top: 10vw;
-  background-image: url('Assets/skill-background.png');
+  background-image: url('Assets/skill-backdrop.jpg');
   background-repeat: no-repeat;
   background-size: 100vw 140vh;
   text-align: center;
