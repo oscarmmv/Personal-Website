@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head id="home">
     <title>Oscar Saul</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -8,21 +8,22 @@
 <body>
     <nav class="navMenu">
         <a class="text-dec-nav">— X —</a>
-        <a class="home-nav" href="#">HOME</a>
-        <a class="about-nav" href="#">ABOUT</a>
-        <a class="skills-nav" href="#">SKILLS</a>
-        <a class="portfolio-nav" href="#">PORTFOLIO</a>
-        <a class="contact-nav" href="#">CONTACT</a>
+        <a class="home-nav" href="#Home">HOME</a>
+        <a class="about-nav" href="#About">ABOUT</a>
+        <a class="skills-nav" href="#Skill">SKILLS</a>
+        <a class="portfolio-nav" href="#Portfolio">PORTFOLIO</a>
+        <a class="contact-nav" href="#Contact">CONTACT</a>
         <a class="text-dec-nav">——————— X</a>
     </nav>
 
     <section class="home">
+        <div id="Home"></div>
         <video autoplay muted loop>
             <source id="background" src="Assets/background.mp4" type="video/mp4">
         </video>
         <div class="hometag">
             <h2 data-aos="fade-left" data-aos-duration="2000">Hi, I'm</h2>
-            <h1>Oscar Saul</h1>
+            <h1 >Oscar Saul</h1>
             <div class="desc" data-aos="fade-left" data-aos-duration="2000">Front-end Devloper from ON, CA</div>
         </div>
         <div class="drop-down">
@@ -30,13 +31,13 @@
                 See more
             </div>
             <img class="drop-down-button" <img src="https://i.ibb.co/6HjRBF5/download.png"/>
-        </div>
+        </div> 
     </section>
     <section class="about">
         <div class="profile">
             <div class="profile-wrapper">
                 <div class="profile-desc">
-                    <img src="https://i.ibb.co/HGM1Z0n/logoVar2.jpg" class="profile-pic">
+                    <img id="About" src="https://i.ibb.co/HGM1Z0n/logoVar2.jpg" class="profile-pic">
                     <h3>About me</h3>
                     <div class="about-bio">
                         Hey, my name is Oscar! I am a high school student from Markham, Ontario. I have a serious passion for computer science and artificial intelligence. Currently, I am working on broadening my skills as a front-end developer. 
@@ -105,7 +106,7 @@
             </div>
         </div>
     </section>
-    <section class="skill">
+    <section id="Skill" class="skill">
         <div class="skill-heading-wrapper">
             <h3 class="skills">Skills</h3>
         </div>
@@ -153,12 +154,12 @@
         </section>
     </section>
 
-    <section class="portfolio">
+    <section id="Portfolio" class="portfolio">
         <div class="project-heading-wrapper">
             <h3 class="projects">Projects</h3>
         </div>
         <div class="project-wrapper-row1" data-aos="zoom-in" data-aos-duration="1500">
-            <div class="multi-language-learner">
+            <div  class="multi-language-learner">
                 <img class="preview" src="Assets/preview1.png">
                 <div id="preview" class="preview-overlay">
                     <h4 class="preview-title">Language Learner</h4>
@@ -204,7 +205,7 @@
             </div>
         </div>
     </section>
-    <section class="contactme">
+    <section id="Contact" class="contactme">
         <div class="contact-wrapper">
             <h3 class="contact-header">Get in Touch</h3>
             <div class="mycontact">
