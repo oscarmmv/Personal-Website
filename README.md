@@ -8,3 +8,4 @@ Not Complete
 4. Final styling
 5. Script contact form
 6. Clean code
+7. get https
