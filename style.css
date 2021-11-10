@@ -36,6 +36,18 @@ body { background: #000000; font-family: "Montserrat", sans-serif;}
   transition: ease-in-out 0.3s;
 }
 
+.active-state {
+  color: #fff;
+  border-left: 3px solid #fff;
+  transition: ease-in-out 0.3s;
+}
+
+.inactive-state {
+  color: #717171;
+  border: none;
+  transition: ease-in-out 0.3s;
+}
+
 #Home {
   position: absolute;
   margin-top: -100vh;
