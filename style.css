@@ -30,7 +30,7 @@ body { background: #000000; font-family: "Montserrat", sans-serif;}
   padding-top: 2vw;
 }
 
-.home-nav:hover, .about-nav:hover, .skills-nav:hover, .portfolio-nav:hover, .contact-nav:hover, .text-dec-nav:hover {
+.home-nav:hover, .about-nav:hover, .skills-nav:hover, .portfolio-nav:hover, .contact-nav:hover {
   color: #fff;
   border-left: 3px solid #fff;
   transition: ease-in-out 0.3s;
