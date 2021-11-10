@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 
-
+html { scroll-behavior: smooth; }
 body { background: #000000; font-family: "Montserrat", sans-serif;}
 
 
@@ -17,6 +17,7 @@ body { background: #000000; font-family: "Montserrat", sans-serif;}
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
+  z-index:1;
 }
 
 .home-nav, .about-nav, .skills-nav, .portfolio-nav, .contact-nav, .text-dec-nav {
