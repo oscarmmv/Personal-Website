@@ -4,16 +4,16 @@
     <title>Oscar Saul</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
 </head>
 <body>
     <nav class="navMenu">
         <a class="text-dec-nav">— X —</a>
-        <a class="home-nav" href="#Home">HOME</a>
-        <a class="about-nav" href="#About">ABOUT</a>
-        <a class="skills-nav" href="#Skill">SKILLS</a>
-        <a class="portfolio-nav" href="#Portfolio">PORTFOLIO</a>
-        <a class="contact-nav" href="#Contact">CONTACT</a>
+        <a class="home-nav" href="#" onclick="scrollToHome(); return false;">HOME</a>
+        <a class="about-nav" href="#" onclick="scrollToAbout(); return false;">ABOUT</a>
+        <a class="skills-nav" href="#" onclick="scrollToSkill(); return false;">SKILLS</a>
+        <a class="portfolio-nav" href="#" onclick="scrollToPortfolio(); return false;">PORTFOLIO</a>
+        <a class="contact-nav" href="#" onclick="scrollToContact(); return false;">CONTACT</a>
         <a class="text-dec-nav">——————— X</a>
     </nav>
 
@@ -31,9 +31,7 @@
             <div class="drop-down-text">
                 See more
             </div>
-            <a href= "#About">
-                <img class="drop-down-button" <img src="https://i.ibb.co/6HjRBF5/download.png"/>
-            </a>
+            <img class="drop-down-button" href="#" onclick="scrollToAbout();" src="https://i.ibb.co/6HjRBF5/download.png"/>
         </div> 
     </section>
     <section class="about">
