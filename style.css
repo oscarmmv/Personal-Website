@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 @media screen and (max-width: 701px) {
   html, body {
-    margin: 0; overflow-x: hidden; max-width: 100%; font-family: "Montserrat", sans-serif;
+    margin: 0; overflow-x: hidden; max-width: 100%; font-family: "Montserrat", sans-serif; background-color: #000;
   }
   video {
     margin-top:  32vw;
@@ -59,9 +59,9 @@
   .about-bio { margin-top: -3.5vh;width: 80%; font-size: 3vw;}
   .graph { width: 100%;  margin-left: -15vw; }
   .graph-wrapper{ margin-top: 1vh; margin-left: 25%; font-size: 2vw; font-weight:700;}
-  #graph-label { z-index: 1; background-color: #171717; color: white; padding: 8px; margin-bottom: 2.5%; text-align: center; width: 20%;}
+  #graph-label { background-color: #171717; color: white; padding: 8px; margin-bottom: 2.5%; text-align: center; width: 20%;}
   .bar-wrapper { width: 71.5%; float: right;}
-  .bar-value { margin-top: -3vw; color: #fff; margin-right: -5%; padding-top: 8px; font-size: 3vw; font-weight: normal; float: right; }
+  .bar-value { margin-top: -1vw; color: #fff; margin-left: -8vw; padding-top: 8px; font-size: 3vw; font-weight: normal; float: right; }
 
   .bar { background-image: linear-gradient(to right, #3A404D 20%, #626C80); padding-bottom: 6vw;}
 
@@ -74,105 +74,105 @@
     height: 140vh;
   }
 
-  .skill-heading-wrapper { padding-top: 20vh; width:100%; padding-left: 46vw;}
-  .skills { font-size: 3.85vmin; color: white; width: 8vw; height: 32%; border-bottom: 3px solid #fff;}
-  .skill-prescript {padding-top: 1.5vw; color:white; height: 20vh; width: 25em; margin: auto;}
+  .skill-heading-wrapper { padding-top: 20vh; width:100%; padding-left: 43vw; }
+  .skills { font-size: 5vw; color: white; width: 14vw; height: 32%; border-bottom: 3px solid #fff;}
+  .skill-prescript {padding-top: 1.5vw; color:white; height: 20vh; width: 70vw; margin: auto; font-size: 3.5vmin;}
 
 
   .code-language {
-    padding-top: 0vh;
+    margin-top: -5vh;
     width: 90%;
     height: 100%;
     margin-left: 7vw;
   }
 
   .skill-logo {
-    height: 5.5vw;
-    padding-right: 3vw;
-    transition: 0.5s ease;
-  }
-
-  .skill-logo:hover {
-    height: 6.25vw;
-    margin-top: -0.75vw;
-    margin-left: -0.36vw;
-    margin-right: -0.36vw;
+    height: 10.5vw;
     padding-right: 3vw;
     transition: 0.5s ease;
   }
 
   .code-language-subscript {
     margin-top: -140vh;
-    margin-left: -26.5vw;
     color: white;
     padding-top: 6.5vw;
   }
   ul li {
+    margin-right: 10vw;
+    margin-top: 3.5vw;
     display: inline;
-    font-size: 0.8vw;
+    font-size: 2vw;
   }
 
   .html-subscript {
-    padding-left: 27.25vw;
+    position: absolute;
+    margin-left: -44vw;
   }
   .css-subscript {
-    padding-left: 6.15vw;
+    position: absolute;
+    margin-left: -30vw;
   }
   .javascript-subscript {
-    padding-left: 4.75vw;
+    position: absolute;
+    margin-left: -20.25vw;
   }
   .react-subscript {
-    padding-left: 4.75vw;
+    position: absolute;
+    margin-left: -2vw;
   }
   .csharp-subscript {
-    padding-left: 6.75vw;
+    position: absolute;
+    margin-left: 14.5vw;
   }
   .unity-subscript {
-    padding-left: 6.5vw;
+    position: absolute;
+    margin-left: 27vw;
   }
 
   .skills-desc-wrapper {
+    padding-top: 10vw;
     margin-top: 5vw;
     height: 10vw;
   }
 
   .skill-headings {
+    margin-top: -5vw;
     display: inline-block;
-    justify-content:space-between 1vw;
     padding: 2.5vw 5vw 5vw;
+    font-size: 3vw;
     color: white;
   }
 
   .skill-desc {
     text-align: center;
-    width: 15vw;
-    padding-top: 1vw;
+    width: 80vw;
+    margin-top: 2vw;
   }
     /* portfolio */
-  .portfolio { font-size: 3.85vmin; height: 140vh; margin-top: -10vh; background-image:linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url("Assets/portfolio-backdrop.jpg"); }
+  .portfolio { height: 70vh; margin-top: -10vh; background-image:linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url("Assets/portfolio-backdrop.jpg"); }
   /* .portfolio { font-size: 1.5vw; height: 140vh; margin-top: -10vh; background: linear-gradient(transparent , #000 10%),url('/Assets/portfolio-backdrop.jpg'); background-size: cover; } */
-  .project-heading-wrapper { width: 12vw; margin: 0 auto; margin-left: 45vw;}
-  .projects { padding-top: 20vh; margin: auto; color: white; width: 20vmin; height: 32%; border-bottom: 3px solid #fff;}
+  .project-heading-wrapper { width: 23vw; margin: 0 auto; margin-left: 40vw;}
+  .projects { padding-top: 20vh; color: white; width: 100%; height: 32%; border-bottom: 3px solid #fff; }
 
-  .project-wrapper-row1 { display: flex; height: 20vw; margin: 5vh; position: relative;}
-  .multi-language-learner { margin-left: 15%; position: relative; flex: 1; display: block; width: 100%;}
+  .project-wrapper-row1 { margin-left: 6vw; display: flex; height: 30vw; position: relative;}
+  .multi-language-learner { position: relative; flex: 1; display: block; width: 100%;}
   .endless-drive { position: relative; flex: 1; display: block; width: 100%}
-  .todo-list { margin-right: 10%; position: relative; flex: 1; display: block; width: 100%;}
+  .todo-list { position: relative; flex: 1; display: block; width: 100%;}
 
-  .project-wrapper-row2 { display: flex; height: 20vw; margin: 5vh; position: relative;}
-  .notepad { margin-left: 15%; position: relative; flex: 1; display: block; width: 100%;}
+  .project-wrapper-row2 { margin-left: 6vw; display: flex; height: 30vw; position: relative;}
+  .notepad {position: relative; flex: 1; display: block; width: 100%;}
   .calculator { position: relative; flex: 1; display: block; width: 100%}
-  .blackjack { margin-right: 10%; position: relative; flex: 1; display: block; width: 100%;}
+  .blackjack {position: relative; flex: 1; display: block; width: 100%;}
 
-  .preview { width: 20vw; position: relative;}
+  .preview { width: 26vw; position: relative;}
 
 
   #preview { 
-    top: 0; left: 0; position: absolute; width: 20.25vw; height: 20vw;  
+    top: 0; left: 0; position: absolute; width: 26.5vmin; height: 26.5vmin;  
     background-color: rgba(27, 26, 31, 0.95); color: white; opacity: 0; transition: all 0.4s ease;
   }
-  #preview:hover { opacity: 1; margin-left: -0.125vw; }
-  .preview-title, .preview-desc { font-size: 1.5vw; padding-top: 2vh; text-align: center;}
+  #preview:hover { opacity: 1; }
+  .preview-title, .preview-desc { width: 75%; margin: auto; font-size: 2vw; padding-top: 2vh; text-align: center;} 
 
 
 
@@ -188,56 +188,60 @@
     position: absolute;
     margin-left: 10vw;
     margin-top: 10vh;
-    height: 75vh;
+    height: 85vh;
     width: 80vw;
   }
 
   .contact-header {
     border-bottom: 3px solid #fff;
-    width: 20%;
+    width: 45%;
     margin: auto;
     margin-top: 10vh;
-    font-size: 2vw;
+    font-size: 5vw;
     color: #FFFF;
   }
 
+  .myEmail, .myPhone {
+    margin-top: -25vw;
+  }
 
   .myInfo{
-    position: absolute;
-    text-align: left;
-    font-size: 2vmin;
-    margin-bottom: 100px;
-    margin: 5vw 10vw 5vw;
+    width: 100vw;
+    text-align: center; 
+    margin-top: 5vw;
+    margin-left: -10vw;
+    font-size: 3vw;
     color: #FFFF;
+    margin-bottom: 8vw;
   }
-
-
-  .message {
-    margin-left: 40vw;
-  }
-
+  input:focus {outline: none; }
   .name, .email {
-    width: 15vw;
-    height: 4vh;
-    background-color: #282C34;
-    color: #fff;
-  }
-  .phone {
     width: 30vw;
     height: 4vh;
     background-color: #282C34;
     color: #fff;
+    font-size: 3vw;
+  }
+  .phone {
+    width: 60vw;
+    height: 4vh;
+    background-color: #282C34;
+    color: #fff;
+    font-size: 3vw;
   }
   .subject {
     resize: none;
-    width: 30vw;
-    height: 20vh;
+    width: 60vw;
+    max-height: 20vh;
     background-color: #282C34;
     color: #fff;
+    font-size: 3vw;
+    outline: 0;
   }
   .send {
     float: right;
-    margin-right: 5vw;
+    margin-right: 10vw;
+    font-size: 3vw;
   }
 
   input[type=text], select, textarea {
@@ -543,11 +547,11 @@ ul li {
   position: absolute;
   text-align: left;
   font-size: 2vmin;
-  margin-bottom: 100px;
-  margin: 5vw 10vw 5vw;
+  margin: 2vw 10vw 5vw;
   color: #FFFF;
 }
 
+input:focus {outline: none; }
 
 .message {
   margin-left: 40vw;
@@ -571,6 +575,7 @@ ul li {
   height: 20vh;
   background-color: #282C34;
   color: #fff;
+  outline: 0;
 }
 .send {
   float: right;
