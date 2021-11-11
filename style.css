@@ -135,7 +135,7 @@ h3 { padding-top: 15px; padding-bottom: 30px;}
 
 
 .code-language {
-  padding-top: 10vh;
+  padding-top: 0vh;
   width: 90%;
   height: 100%;
   margin-left: 7vw;
@@ -157,7 +157,7 @@ h3 { padding-top: 15px; padding-bottom: 30px;}
 }
 
 .code-language-subscript {
-  margin-top: -130vh;
+  margin-top: -140vh;
   margin-left: -26.5vw;
   color: white;
   padding-top: 6.5vw;
