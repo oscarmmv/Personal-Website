@@ -261,11 +261,15 @@ ul li {
 }
 
 
-.myAddress, .myEmail, .myPhone {
+.myInfo{
   position: absolute;
+  text-align: left;
+  font-size: 2vmin;
+  margin-bottom: 100px;
   margin: 5vw 10vw 5vw;
   color: #FFFF;
 }
+
 
 .message {
   margin-left: 40vw;
