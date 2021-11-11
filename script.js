@@ -50,3 +50,8 @@ window.addEventListener("scroll", function(event) {
 
 });
 
+var video = document.getElementById("home-video");
+video.oncanplaythrough = function() {
+    video.muted = true;
+    video.play();
+}
