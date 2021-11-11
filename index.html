@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
 </head>
 <body>
+    <!-- Nav Bar -->
     <nav class="navMenu">
         <a class="text-dec-nav">— X —</a>
         <a id="nav-home" class="home-nav" href="#" onclick="scrollToHome(); return false;">HOME</a>
@@ -17,6 +18,11 @@
         <a id="nav-about" class="text-dec-nav">——————— X</a>
     </nav>
 
+    <!-- Menu (Mobile View)-->
+    <div class="menu-bar" id="menuBar1"></div>
+    <div class="menu-bar" id="menuBar2"></div>
+    <div class="menu-bar" id="menuBar3"></div>
+    <!-- Home page -->
     <section class="home">
         <div id="Home"></div>
         <video autoplay muted loop>
@@ -34,6 +40,8 @@
             <img class="drop-down-button" href="#" onclick="scrollToAbout();" src="https://i.ibb.co/6HjRBF5/download.png"/>
         </div> 
     </section>
+
+    <!-- About page -->
     <section class="about">
         <div class="profile">
             <div class="profile-wrapper">
@@ -107,6 +115,8 @@
             </div>
         </div>
     </section>
+
+    <!--Skill page-->
     <section class="skill">
         <div class="skill-heading-wrapper">
             <h3 id="Skill" class="skills">Skills</h3>
@@ -156,6 +166,7 @@
         </section>
     </section>
 
+    <!-- Portfolio page-->
     <section id="Portfolio" class="portfolio">
         <div style="position: absolute; width: 100%; height: 20vh; background-image: linear-gradient(rgba(0, 0, 0, 0.2), transparent );"></div>  
         <div class="project-heading-wrapper">
@@ -208,6 +219,8 @@
             </div>
         </div>
     </section>
+
+    <!--Contact Page-->
     <section id="Contact" class="contactme">
         <div class="contact-wrapper">
             <h3 class="contact-header">Get in Touch</h3>
@@ -234,6 +247,7 @@
 
 
     <script src="script.js"></script>
+    <!--Import AOS libary ~ https://michalsnik.github.io/aos/ -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
