@@ -21,11 +21,20 @@
     </nav>
 
     <!-- Menu (Mobile View)-->
-    <div class="menu-bar" id="menuBar1"></div>
-    <div class="menu-bar" id="menuBar2"></div>
-    <div class="menu-bar" id="menuBar3"></div>
+    <a class="menu-bar" id="menuBar1" onclick="revealMenu();"></a>
+    <a class="menu-bar" id="menuBar2" onclick="revealMenu();"></a>
+    <a class="menu-bar" id="menuBar3" onclick="revealMenu();"></a>
+    <div id="menu-cover" >
+        <a class="menu-home" class="home-nav" href="#" onclick="scrollToHome(); return false;">HOME</a>
+        <a class="menu-about" class="about-nav" href="#" onclick="scrollToAbout(); return false;">ABOUT</a>
+        <a class="menu-skill" class="skills-nav" href="#" onclick="scrollToSkill(); return false;">SKILLS</a>
+        <a class="menu-portfolio" class="portfolio-nav" href="#" onclick="scrollToPortfolio(); return false;">PORTFOLIO</a>
+        <a class="menu-contact" class="contact-nav" href="#" onclick="scrollToContact(); return false;">CONTACT</a>
+    </div>
+    
+
     <!-- Home page -->
-    <section class="home">
+    <section class="home" id="mobile-home">
         <div id="Home"></div>
         <video class="home-video" autoplay muted loop>
             <source id="background" src="Assets/background.webm" type="video/webm">
