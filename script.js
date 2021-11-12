@@ -59,7 +59,7 @@ window.addEventListener('scroll', (e) => {
 
 function revealMenu() {
     document.getElementById("menu-cover").style.display = "table";
-    document.getElementById("menu-cover").style.height = "100vh";
+    document.getElementById("menu-cover").style.height = "1000vh";
 }
 
 var video = document.getElementById("home-video");
