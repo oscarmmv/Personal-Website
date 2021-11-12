@@ -21,7 +21,6 @@ window.addEventListener("scroll", function(event) {
     var activeSkill = document.getElementById("nav-skill");
     var activePortfolio = document.getElementById("nav-portfolio");
     var activeContact = document.getElementById("nav-contact");
-    console.log(scroll);
     if(scroll >= 0 && scroll <= 958) {
         activeHome.classList.add("active-state");
     } else {
@@ -50,8 +49,14 @@ window.addEventListener("scroll", function(event) {
 
 });
 
+$(document).ready(function() {
+    document.getElementsByTagName("html")[0].style.visibility = "visible";
+});
+
 var video = document.getElementById("home-video");
 video.oncanplaythrough = function() {
     video.muted = true;
     video.play();
 }
+
+
