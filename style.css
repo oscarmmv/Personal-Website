@@ -6,7 +6,7 @@ html { visibility:hidden; scroll-behavior: smooth; }
     overflow-x: hidden; 
     max-width: 100%; 
     font-family: "Montserrat", sans-serif; 
-    background-color: #000;
+    background-color: #090909;
   }
   .navMenu {
     display: none;
@@ -337,7 +337,7 @@ html { visibility:hidden; scroll-behavior: smooth; }
     box-sizing: border-box;
   }
   html{scroll-behavior: smooth; }
-  body{background: #000000; font-family: "Montserrat", sans-serif; overflow-x: hidden; max-width: 100%;}
+  body{background: #0A0A0A; font-family: "Montserrat", sans-serif; overflow-x: hidden; max-width: 100%;}
   
   
   /* NAVBAR  */
