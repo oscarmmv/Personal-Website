@@ -53,6 +53,15 @@ $(document).ready(function() {
     document.getElementsByTagName("html")[0].style.visibility = "visible";
 });
 
+window.addEventListener('scroll', (e) => {  
+    document.getElementById("menu-cover").style.display = "none";
+})
+
+function revealMenu() {
+    document.getElementById("menu-cover").style.display = "table";
+    document.getElementById("menu-cover").style.height = "1000vh";
+}
+
 var video = document.getElementById("home-video");
 video.oncanplaythrough = function() {
     video.muted = true;
