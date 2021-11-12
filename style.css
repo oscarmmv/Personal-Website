@@ -300,6 +300,31 @@ html { visibility:hidden; scroll-behavior: smooth; }
     background-color: #454C5A;
     padding: 20px;
   }
+  .social-media{
+    color: white;
+    display: flex;
+    margin-left: 10.5vw;
+    width: 15vw;
+  }
+  .fab {
+    color: white;
+    font-size: 5vw;
+  }
+  .fa-github-square:hover,  .fa-linkedin-in:hover,  .fa-discord:hover {
+    color: #455284;
+    transition: ease-in-out 0.3s;
+  }
+  .gh {
+    flex: 1;
+  }
+  .lk {
+    padding-left: 5vw;
+    flex: 1;
+  }
+  .dc {
+    padding-left: 5vw;
+    flex: 1;
+  }
 }
 
 
@@ -641,5 +666,30 @@ html { visibility:hidden; scroll-behavior: smooth; }
     border-radius: 5px;
     background-color: #454C5A;
     padding: 20px;
+  }
+  .social-media{
+    color: white;
+    display: flex;
+    margin-left: 8.5vw;
+    width: 15vw;
+  }
+
+  .fab {
+    color: white;
+    font-size: 2vw;
+  }
+
+  .fa-github-square:hover,  .fa-linkedin-in:hover,  .fa-discord:hover {
+    color: #455284;
+    transition: ease-in-out 0.3s;
+  }
+  .gh {
+    flex: 1;
+  }
+  .lk {
+    flex: 1;
+  }
+  .dc {
+    flex: 1;
   }
 }
