@@ -2,9 +2,11 @@
 <html lang="en">
 <head id="home">
     <title>Oscar Saul</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <script src="script.js"></script>
 </head>
 <body>
     <!-- Nav Bar -->
@@ -26,6 +28,7 @@
     <section class="home">
         <div id="Home"></div>
         <video class="home-video" autoplay muted loop>
+            <source id="background" src="Assets/background.webm" type="video/webm">
             <source id="background" src="Assets/background.mp4" type="video/mp4">
         </video>
         <div class="hometag">
@@ -241,12 +244,7 @@
               </form>
         </div>
     </section>
-      
-
-
-
-
-    <script src="script.js"></script>
+    
     <!--Import AOS libary ~ https://michalsnik.github.io/aos/ -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
