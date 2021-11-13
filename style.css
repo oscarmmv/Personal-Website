@@ -27,35 +27,42 @@ html { visibility:hidden; scroll-behavior: smooth; }
     background-clip: content-box;
   }
 
-  /* NAV BUTTON */
-  .navWrapper {
-    z-index: 1;
-    transform: translateZ(0);
-    position: fixed;
-    margin: 5vw;
-    width: 10vw;
-    height: 10vw;
-  }
-
-  .navBar {
-    width: 100%;
-    height: 10%;
-    margin-bottom: 20%;
-    background-color: #fff;
-  }
-
-  #nav-cover-menu {
-    z-index: 2;
-    position: fixed;
-    color: white;
-    background-color: #000;
-    width: 100%;
-    height: 100%;
-  }
-  .menu-tags {
-    margin-top: 25vw;
-  }
-  .home-nav, .about-nav, .skills-nav, .portfolio-nav, .contact-nav {
+ /* NAV BUTTON */
+ .navWrapper {
+  z-index: 1;
+  transform: translateZ(0);
+  position: fixed;
+  margin: 5vw;
+  width: 10vw;
+  height: 10vw;
+}
+.navBar {
+  width: 100%;
+  height: 10%;
+  margin-bottom: 20%;
+  background-color: #fff;
+}
+#nav-cover-menu {
+  z-index: 2;
+  position: fixed;
+  color: white;
+  background-color: #000;
+  width: 100%;
+  height: 100%;
+}
+.menu-tags {
+  margin-top: 25vw;
+}
+.home-nav, .about-nav, .skills-nav, .portfolio-nav, .contact-nav {
+  display:inline-block; 
+  font-size: 6vw;
+  width: 100%;
+  margin-top: 6vh;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+}
+  .menu-nav, .menu-nav, .menu-nav, .menu-nav, .menu-nav {
     display:inline-block; 
     font-size: 6vw;
     width: 100%;
@@ -813,4 +820,3 @@ html { visibility:hidden; scroll-behavior: smooth; }
   margin-top: 90vh;
 }
 .scroll-top-button:hover{width: 6vh;}
-
