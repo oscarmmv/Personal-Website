@@ -233,17 +233,16 @@
                 <br><br><br>
                 <div class="myInfo">Markham ON, Canada<br><br><br><br><div class = "myEmail">oscarsaul.mmv@gmail.com</div><br><br><br><br><div class="myPhONE">4372193454</div></div>
             </div>
-
-            <form class="message" action="/action_page.php">
-                <input type="text" class="name" placeholder="Name">
-                <input type="text" class="email" placeholder="Email Address">
-                <input type="text" class="phone" placeholder="Phone Number">
-            
-
-                <textarea id="subject" class="subject" placeholder="Message" style="height:200px; font-family: Montserrat;"></textarea>
-                <br>
-                <input class="send" type="submit" value="Send">
-              </form>
+                <form class="message" target="_blank" action="https://formsubmit.co/oscarsaul.mmv@gmail.com" method="POST">
+                    <input class="name" type="text" name="name" class="form-control" placeholder="   Full Name" required>
+                    <input type="text" class="phone" placeholder="   Phone Number">
+                    <input class="email" type="email" name="email" class="form-control" placeholder="   Email Address" required>
+                    <textarea id="subject" class="subject"  placeholder="&#10;   Message" class="form-control" name="message" rows="10" required></textarea>
+                    <br>
+                    <button class="send" type="submit" class="btn btn-lg btn-dark btn-block">Send</button>
+                    <input type="hidden" name="_subject" value="New submission!">
+                    <input type="hidden" name="_autoresponse" value="Thank you for contacting me! I will reply as soon as I am available.">
+                </form>
               <div class="social-media">
                   <a href="https://github.com/oscarmmv" class="gh"><i class="fab fa-github-square"></i></a>
                   <a href="https://ca.linkedin.com/in/oscar-saul-96a3b7223?trk=people-guest_people_search-card" class="lk"><i class="fab fa-linkedin-in"></i></a>
