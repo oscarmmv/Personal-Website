@@ -49,8 +49,14 @@ window.addEventListener("scroll", function(event) {
 
 });
 
+const revealCoverMenu = () => {
+    document.getElementById("nav-cover-menu").style.display = "block";
+}
+const hideCoverMenu = () => {
+    document.getElementById("nav-cover-menu").style.display = "none"; 
+}
+
+
 $(document).ready(function() {
     document.getElementsByTagName("html")[0].style.visibility = "visible";
 });
-
-
