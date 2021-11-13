@@ -82,6 +82,9 @@ html { visibility:hidden; scroll-behavior: smooth; }
     height: 70vh;
     transform: rotate(90deg);
   }
+  video::-webkit-media-controls {
+    display:none !important;
+  }
   .drop-down {
     color: white;
     margin-top: -15vw;
