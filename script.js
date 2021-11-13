@@ -49,10 +49,10 @@ window.addEventListener("scroll", function(event) {
 
 });
 
-const revealCoverMenu = () => {
+function revealCoverMenu() {
     document.getElementById("nav-cover-menu").style.display = "block";
 }
-const hideCoverMenu = () => {
+function hideCoverMenu() {
     document.getElementById("nav-cover-menu").style.display = "none"; 
 }
 
