@@ -1,0 +1,462 @@
+@font-face {
+    font-family: Suit;
+    src: url("/assets/SUIT-Regular.otf") format("opentype");
+}
+
+* {
+    margin: 0;
+    overflow-x: hidden;
+    font-family: "Suit";
+}
+
+html {
+    background-color: #121212;
+}
+
+h3 {
+    text-align: left;
+    color: #fff;
+    font-size: 22px;
+    font-family: "Suit";
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Nav */
+#nav {
+    position: fixed;
+    padding: 20px;
+}
+
+.nav-ports {
+    color: #fff;
+    list-style-type: none;  
+    display: inline;
+    padding-left: 20px;
+}
+
+/* Splash page */
+#splash-page {
+    background-color: #121212;
+    height: 200vh;
+    width: 100vw;
+}
+
+#splash-heading-wrapper {
+    background-color: #121212;
+    padding-top: 20vh;
+    text-align: center;
+}
+
+#name {
+    color: #fff;
+    font-size: 54px;
+    font-family: "Suit";
+}
+
+#sub-heading {
+    color: #669997;
+    font-size: 14px;
+    padding-bottom: 50px;
+}
+
+.splash-button {  
+    color: #88ccca;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 5px;
+    border: solid #88ccca;
+    border-width: 2px;
+}
+
+#about-button {
+    width: 100px;
+    margin-right: 7px;
+    background-color: #121212;
+    font-family: "Suit";
+}
+
+#works-button{
+    color: #121212;
+    width: 80px;
+    margin-left: 7px;
+    background-color: #88ccca;
+}
+
+/* Works */
+
+#my-works {
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+    width: 800px;
+    height: 500px;
+    color: #fff;
+}
+
+.my-works-heading {
+    text-align: left;
+    text-decoration: none;
+    background-image: linear-gradient(to right, #88ccca, #88ccca);
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: 30px 2px;
+    transition: background-size .5s ease;
+}
+
+.my-works-heading:hover {
+    background-size: 60px 2px;
+}
+
+#work-desc {
+    text-align: left;
+    width: 75%;
+    margin:auto;
+}
+
+#work-preview-wrapper {
+    overflow-y: hidden;
+}
+.work-preview {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    margin-top: 50px;
+    border-radius: 15px;
+    background-color: aqua;
+}
+
+#project1-preview {
+    margin-right: 50px;
+}
+
+#project2-preview {
+    margin-left: 50px;
+}
+
+#project-port {
+    color: #88ccca;
+    display: inline-block;
+    margin-top: 30px;
+    width: 115px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 5px;
+    border: solid #88ccca;
+    border-width: 2px;
+}
+
+
+/* bio */
+#about-me {
+    color:#fff;
+    text-align: center;
+    width: 800px;
+    margin: auto;
+}
+
+#bio {
+    margin-top: 200px;
+    text-align: left;
+    text-decoration: none;
+    background-image: linear-gradient(to right, #88ccca, #88ccca);
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: 15px 2px;
+    transition: background-size .5s ease;
+}
+
+#bio:hover {
+    background-size: 35px 2px;
+}
+
+#about-frame-wrapper {
+    text-align: left;
+    width: 450px;
+    float: left;
+}
+.about-frame {
+    text-align: center;
+    width: 125px;
+    height: 100px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 15px;
+    background-color: #202023;
+    display: inline-block;
+}
+
+#about-bio {
+    text-align: justify;
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 425px;
+}
+#about-logo {
+    height: 250px;      
+    width: 250px;
+    float: right;
+    margin-left: 50px;
+    margin-top: 20px;
+    background-color: #88ccca;
+}
+
+.about-icons {
+    color: #88ccca;
+    margin-top: 10px;   
+}
+.about-tag {
+    margin-top: 10px;
+}
+.about-subscript {
+    margin-top: 4px;
+    font-size: 14px;
+    color: #7e8490;
+}
+
+#my-skills {
+    width: 800px;
+    height: 900px;
+    margin: auto;
+}
+
+#interests-frame {
+    width: 600px;
+    height: 210px;
+}
+
+#interests-header {
+    margin: 40px 20px 20px;
+    text-decoration: none;
+    background-image: linear-gradient(to right, #88ccca, #88ccca);
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: 47px 2px;
+    transition: background-size .5s ease;
+}
+
+#interests-header:hover {
+    background-size: 94px 2px;
+}
+#interests-list {
+    text-align: left;
+    display: -ms-flexbox;           /* IE 10 */
+    display: -webkit-flex;          /* Safari 6.1+. iOS 7.1+ */
+    display: flex;
+    -webkit-flex-flow: wrap column; /* Safari 6.1+ */
+    flex-flow: wrap column;
+    max-height: 120px;  
+}
+
+.my-interests {
+    margin-top: 20px;
+    margin-left: -20px;
+}
+/* my skills */
+#experience {
+    margin-top: 200px;
+    margin-bottom: 75px;
+    text-align: left;
+    text-decoration: none;
+    background-image: linear-gradient(to right, #88ccca, #88ccca);
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: 60px 2px;
+    transition: background-size .5s ease;
+}
+
+#experience:hover {
+    background-size: 120px 2px;
+}
+
+.skill-frame {
+    width:365px;
+    height:320px;
+    border-radius: 15px;
+    background-color: #202023;
+}
+#languages {
+    float: left;
+}
+#tools {
+    float: right;
+}
+
+.skill-heading {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+    color: #88ccca;;
+}
+
+.skill-list {
+    margin-top: 30px;
+    display: -ms-flexbox;           /* IE 10 */
+    display: -webkit-flex;          /* Safari 6.1+. iOS 7.1+ */
+    display: flex;
+    -webkit-flex-flow: wrap column; /* Safari 6.1+ */
+    flex-flow: wrap column;
+    max-height: 200px;              /* Limit height to whatever you need */
+    color: #fff;
+}
+
+#skill-badge {
+    font-size: 15px;
+    margin-right: 12px;
+    margin-left: 12px;
+    color: #88ccca;;
+}
+
+.skills {
+    display: inline-block;
+    margin-left: -27px;
+    font-size: 22px;    
+    font-family: "Suit";
+}
+.skill-desc {
+    padding-bottom: 20px;
+    font-size: 14px;
+    margin-left: 12px;
+    color: #7e8490;
+    font-family: "Suit";
+}
+
+#contact{
+    margin-bottom: 50px;
+    text-decoration: none;
+    background-image: linear-gradient(to right, #88ccca, #88ccca);
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: 80px 2px;
+    transition: background-size .5s ease;
+}
+
+#contact:hover {
+    background-size: 160px 2px;
+}
+#contact-page {
+    width: 800px;
+    height: 600px;
+    margin: auto;
+}
+
+#contact-box-wrapper {
+    float: left;
+    width: 400px;
+    height: 415px;
+    overflow-y: hidden;
+}
+
+#contact-frame {
+    float: right;
+    width: 400px;
+}
+
+.contact-box {
+    width: 275px;
+    height: 125px;
+    margin-bottom: 20px;
+    color: #fff;
+    background-color: #202023; 
+}   
+
+#contact-icon {
+    font-size: 22px;
+}
+.my-contacts {
+    text-align: center; 
+    margin-top: 20px;
+}
+#contacts {
+    text-decoration: none;
+    text-align: center;
+    font-size: 14px;
+    color: #878795;
+}
+
+.contact-link {
+    font-size: 14px;
+    color: #669997;
+    text-decoration: none;  
+    margin-left: 95px;
+}
+
+#message {
+    font-size: 12px;
+    border-radius: 5px;
+}
+#username {
+    width: 145px;
+    height: 60px;
+    padding-left: 20px;
+    background-color: #202023;
+    color: #88ccca;
+    font-size: 12px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+#email {
+    float: right;
+    width: 180px;
+    height: 60px;
+    padding-left: 20px;
+    background-color: #202023;
+    color: #88ccca;
+    font-size: 12px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+#project {
+    margin-top: 25px;
+    width: 380px;
+    height: 36px;
+    padding-top: 24px;
+    padding-left: 20px;
+    background-color: #202023;
+    color: #88ccca;
+    font-size: 12px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+#subject {
+    margin-top: 25px;
+    width: 380px;
+    height: 151px;
+    padding-top: 24px;
+    padding-left: 20px;
+    background-color: #202023;
+    color: #88ccca;
+    font-size: 12px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+#send {
+    float: right;
+    margin-top: 25px;
+    color: #121212;
+    width: 80px;
+    height: 40px;
+    background-color: #88ccca;
+    border-radius:5px;
+    border: none;
+    outline: none;
+}
+
+
+
+  

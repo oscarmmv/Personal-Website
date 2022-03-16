@@ -1,0 +1,121 @@
+@font-face {
+    font-family: Suit;
+    src: url("/assets/SUIT-Regular.otf") format("opentype");
+}
+
+* {
+    margin: 0;
+    overflow-x: hidden;
+    font-family: "Suit";
+    max-height: 100vh;
+}
+
+html {
+    background-color: #121212;
+}
+
+h3 {
+    text-align: left;
+    color: #fff;
+    font-size: 22px;
+    font-family: "Suit";
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Nav */
+#nav {
+    position: fixed;
+    padding: 20px;
+}
+
+.nav-ports {
+    color: #fff;
+    list-style-type: none;  
+    display: inline;
+    padding-left: 20px;
+}
+
+
+/* Splash page */
+#splash-page {
+    background-color: #121212;
+    height: 200vh;
+    width: 100vw;
+}
+
+#splash-heading-wrapper {
+    background-color: #121212;
+    padding-top: 20vh;
+    text-align: center;
+}
+
+#name {
+    color: #fff;
+    font-size: 54px;
+    font-family: "Suit";
+}
+
+#sub-heading {
+    color: #669997;
+    font-size: 14px;
+    padding-bottom: 50px;
+}
+
+.splash-button {  
+    color: #88ccca;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 5px;
+    border: solid #88ccca;
+    border-width: 2px;
+}
+
+#about-button {
+    width: 100px;
+    margin-right: 7px;
+    background-color: #121212;
+    font-family: "Suit";
+}
+
+#resume-button{
+    color: #121212;
+    width: 100px;
+    margin-left: 7px;
+    background-color: #88ccca;
+}
+
+#speciality-wrapper {
+    width: 800px;
+    height: 500px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.speciality {
+    width: 250px;
+    height: 200px;
+    display: inline-block;
+    margin-left: 11px;
+    background-color: #202023;
+    border-radius: 5px;
+}
+
+.my-speciality {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.speciality-desc {
+    color: #7e8490;
+    margin-left: -10px;
+}
+
+#spec-icon {
+    color: #88ccca;
+    padding-right: 10px;
+}
