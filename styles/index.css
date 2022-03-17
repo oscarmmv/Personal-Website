@@ -3,25 +3,34 @@
     src: url("/assets/SUIT-Regular.otf") format("opentype");
 }
 
+:root {
+    --main-color: #f0e7db;
+    --main-text-color: #fff;
+    --secondary-text-color: #202023;
+    --theme-color: #e2e2e2; 
+}
+
+
 * {
     margin: 0;
     overflow-x: hidden;
     font-family: "Suit";
+    scroll-behavior: smooth;
 }
 
 html {
-    background-color: #121212;
+    background-color: var(--main-color);
 }
 
 h3 {
     text-align: left;
-    color: #fff;
+    color: var(--main-text-color);
     font-size: 22px;
     font-family: "Suit";
 }
 a {
     text-decoration: none;
-    color: #fff;
+    color: var(--main-text-color);
 }
 
 /* Nav */
@@ -31,27 +40,42 @@ a {
 }
 
 .nav-ports {
-    color: #fff;
+    color: var(--main-text-color);
     list-style-type: none;  
     display: inline;
     padding-left: 20px;
 }
 
+#theme {
+    margin-left: 1400px;
+    float: right;
+}
+
+#theme-icon {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: var(--theme-color);
+    border-radius: 5px;
+    background: #88ccca;
+}
+
 /* Splash page */
 #splash-page {
-    background-color: #121212;
+    background-color: var(--main-color);
     height: 200vh;
     width: 100vw;
 }
 
 #splash-heading-wrapper {
-    background-color: #121212;
+    background-color: var(--main-color);
     padding-top: 20vh;
     text-align: center;
 }
 
 #name {
-    color: #fff;
+    color: var(--main-text-color);
     font-size: 54px;
     font-family: "Suit";
 }
@@ -71,17 +95,18 @@ a {
     border-radius: 5px;
     border: solid #88ccca;
     border-width: 2px;
+    cursor: pointer;
 }
 
 #about-button {
     width: 100px;
     margin-right: 7px;
-    background-color: #121212;
+    background-color: var(--main-color);
     font-family: "Suit";
 }
 
 #works-button{
-    color: #121212;
+    color: var(--main-color);
     width: 80px;
     margin-left: 7px;
     background-color: #88ccca;
@@ -95,7 +120,7 @@ a {
     text-align: center;
     width: 800px;
     height: 500px;
-    color: #fff;
+    color: var(--main-text-color);
 }
 
 .my-works-heading {
@@ -154,14 +179,15 @@ a {
 
 /* bio */
 #about-me {
-    color:#fff;
+    color:var(--main-text-color);
     text-align: center;
     width: 800px;
     margin: auto;
 }
 
 #bio {
-    margin-top: 200px;
+    margin-top: 140px;
+    padding-top: 60px;
     text-align: left;
     text-decoration: none;
     background-image: linear-gradient(to right, #88ccca, #88ccca);
@@ -187,7 +213,7 @@ a {
     margin-top: 20px;
     margin-left: 20px;
     border-radius: 15px;
-    background-color: #202023;
+    background-color: var(--secondary-text-color);
     display: inline-block;
 }
 
@@ -203,7 +229,6 @@ a {
     float: right;
     margin-left: 50px;
     margin-top: 20px;
-    background-color: #88ccca;
 }
 
 .about-icons {
@@ -278,7 +303,7 @@ a {
     width:365px;
     height:320px;
     border-radius: 15px;
-    background-color: #202023;
+    background-color: var(--secondary-text-color);
 }
 #languages {
     float: left;
@@ -302,7 +327,7 @@ a {
     -webkit-flex-flow: wrap column; /* Safari 6.1+ */
     flex-flow: wrap column;
     max-height: 200px;              /* Limit height to whatever you need */
-    color: #fff;
+    color: var(--main-text-color);
 }
 
 #skill-badge {
@@ -361,8 +386,8 @@ a {
     width: 275px;
     height: 125px;
     margin-bottom: 20px;
-    color: #fff;
-    background-color: #202023; 
+    color: var(--main-text-color);
+    background-color: var(--secondary-text-color); 
 }   
 
 #contact-icon {
@@ -394,7 +419,7 @@ a {
     width: 145px;
     height: 60px;
     padding-left: 20px;
-    background-color: #202023;
+    background-color: var(--secondary-text-color);
     color: #88ccca;
     font-size: 12px;
     border-radius: 5px;
@@ -407,7 +432,7 @@ a {
     width: 180px;
     height: 60px;
     padding-left: 20px;
-    background-color: #202023;
+    background-color: var(--secondary-text-color);
     color: #88ccca;
     font-size: 12px;
     border-radius: 5px;
@@ -421,7 +446,7 @@ a {
     height: 36px;
     padding-top: 24px;
     padding-left: 20px;
-    background-color: #202023;
+    background-color: var(--secondary-text-color);
     color: #88ccca;
     font-size: 12px;
     border-radius: 5px;
@@ -436,7 +461,7 @@ a {
     height: 151px;
     padding-top: 24px;
     padding-left: 20px;
-    background-color: #202023;
+    background-color: var(--secondary-text-color);
     color: #88ccca;
     font-size: 12px;
     border-radius: 5px;
@@ -448,7 +473,7 @@ a {
 #send {
     float: right;
     margin-top: 25px;
-    color: #121212;
+    color: var(--main-color);
     width: 80px;
     height: 40px;
     background-color: #88ccca;
@@ -457,6 +482,70 @@ a {
     outline: none;
 }
 
+@media screen and (max-width: 800px) {
+    * {
+        margin: 0;
+    }
+    h3 {
+        margin-left: 20px;
+    }
 
+    #my-works {
+        width: 90vw;
+    }
+
+    #work-desc {
+        width: 95%;
+        margin-left: 20px;
+        margin-top: 20px;
+        max-width: 100%;
+    }
+    
+    .work-preview {
+        height: 30vw;
+        width: 30vw;
+    }
+
+    #project1-preview {
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+    #project2-preview {
+        margin-right: 5vw;
+        margin-left: 5vw;
+    }
+    #about-me {
+        width: 90vw;
+        margin-top: 0;
+        margin-left: 20px;;
+    }
+
+    #bio {
+        margin: 0;
+    }
+
+    .about-frame {
+        width: 23vw;
+        white-space: nowrap;
+    }
+
+    .about-tag {
+        font-size: 14px;
+    }
+    .about-subscript {
+        font-size: 12px;
+    }
+    #about-bio {
+        max-width: 80vw;
+        text-align: left;
+    }
+
+    #about-logo {
+        float:left;
+        margin-left: 25vw;
+        width: 40vw;
+        height: 40vw;
+    }
+}
 
   
