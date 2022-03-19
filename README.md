@@ -12,4 +12,4 @@ This repopstiry contains the source code for my portfolio website.
 ## My Website
 
 - Home Page
-> [here](https://michalsnik.github.io/aos/
+> [here](https://michalsnik.github.io/aos/)
