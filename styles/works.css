@@ -42,10 +42,6 @@ a {
     padding-left: 20px;
 }
 
-#theme {
-    margin-left: 1400px;
-    float: right;
-}
 
 #theme-icon {
     width: 30px;
@@ -170,6 +166,22 @@ a {
     color: #7e8490;
 }
 
+@media screen and (max-width: 800px) {
+    .project-frame {
+        all: initial;
+    }
+    #works-header {
+        margin-top: 10vh;
+        margin-left: 39px;
+    }
+    #old-projects-header {
+        margin-left: 39px;
+    }
 
+    
+    #old-projects {
+        all: initial;
+    }
+}
 
   

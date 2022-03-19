@@ -44,11 +44,6 @@ a {
     padding-left: 20px;
 }
 
-#theme {
-    margin-left: 1400px;
-    float: right;
-}
-
 #theme-icon {
     width: 30px;
     height: 30px;
@@ -138,4 +133,16 @@ a {
 #spec-icon {
     color: #88ccca;
     padding-right: 10px;
+}
+
+@media screen and (max-width: 800px) {
+    #speciality-wrapper {
+        max-width: 100vw;
+        min-height: 700px;
+    }
+    .speciality {   
+        display: block;
+        margin: auto;
+        margin-bottom: 2vh;
+    }
 }
