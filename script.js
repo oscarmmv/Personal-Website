@@ -1,10 +1,10 @@
 const swup = new Swup(); // only this line when included with script tag
 var darktheme = true;
 
-document.getElementById('loading-video').addEventListener('ended',myHandler,false);
-function myHandler(e) {
-  document.getElementById('loading-wrapper').style.display = 'none';
-}
+// document.getElementById('loading-video').addEventListener('ended',myHandler,false);
+// function myHandler(e) {
+//   document.getElementById('loading-wrapper').style.display = 'none';
+// }
 
 $(function() {
     AOS.init();
