@@ -22,5 +22,5 @@ This repopstiry contains the source code for my portfolio website.
 >![Oscar Saul](https://i.ibb.co/yYBZGfp/adasd.jpg)
 ⋅⋅⋅ [Projects](https://github.com/oscarmmv) 
 ⋅⋅⋅ [Linkedin](https://www.linkedin.com/authwall?trk=gf&trkInfo=AQGKBkq2ZXGhaQAAAX-kiqzQ5U1qHBlr6eBxK2EfZ3p00nFwHrIUn5xyNePEekOomA8ilScbLx674AZwwPCQyWKAWfd-BMYeSufSuL4mZjUgbGAl83-1BSKJkKG3cz5AfMKMKPM=&originalReferer=https://oscarsaul.ca/&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Foscar-saul-96a3b7223%2F) 
-⋅⋅⋅ [Email](mailto: oscarsaul.mmv@gmail.comv) 
+⋅⋅⋅ [Email](oscarsaul.mmv@gmail.com) 
 ⋅⋅⋅ [Website](https://oscarsaul.ca/) 
