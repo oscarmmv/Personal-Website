@@ -19,5 +19,5 @@ This repopstiry contains the source code for my portfolio website.
 
 
 ## Oscar Saul  
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+![Oscar Saul](https://i.ibb.co/yP9tq3q/logo.jpg)
 
