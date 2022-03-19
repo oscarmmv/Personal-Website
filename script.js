@@ -1,4 +1,4 @@
-const swup = new Swup(); // only this line when included with script tag
+const swup = new Swup(); 
 var darktheme = true;
 
 // document.getElementById('loading-video').addEventListener('ended',myHandler,false);
