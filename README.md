@@ -11,5 +11,6 @@ This repopstiry contains the source code for my portfolio website.
 
 ## My Website
 
-- Home Page
-> [here](https://michalsnik.github.io/aos/)
+**Index**
+
+> Home Page [1](https://michalsnik.github.io/aos/)
