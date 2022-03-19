@@ -13,4 +13,6 @@ This repopstiry contains the source code for my portfolio website.
 
 **Index**
 
-> Home Page [1](https://michalsnik.github.io/aos/)
+> Home Page [1](https://oscarsaul.ca/)
+> Portfolio Page [2](https://oscarsaul.ca/works)
+> Resume Page [3](https://oscarsaul.ca/resume)
