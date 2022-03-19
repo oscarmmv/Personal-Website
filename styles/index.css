@@ -37,7 +37,7 @@ a {
     width: 100vw;
     height: 100vh;
     position: absolute;
-    background-color: #000;
+    background-color: #111111;
 }
 #loading-video {
     display: block;
