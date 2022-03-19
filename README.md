@@ -19,5 +19,5 @@ This repopstiry contains the source code for my portfolio website.
 
 
 ## Oscar Saul  
-![Oscar Saul](https://i.ibb.co/yP9tq3q/logo.jpg)
+![Oscar Saul](https://i.ibb.co/yP9tq3q/logo.jpg =40x40)
 
