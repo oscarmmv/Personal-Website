@@ -13,6 +13,11 @@ This repopstiry contains the source code for my portfolio website.
 
 **Index**
 
-> Home Page [1](https://oscarsaul.ca/)  
-> Portfolio Page [2](https://oscarsaul.ca/works)  
-> Resume Page [3](https://oscarsaul.ca/resume)  
+> Home Page [i](https://oscarsaul.ca/)  
+> Portfolio Page [ii](https://oscarsaul.ca/works)  
+> Resume Page [iii](https://oscarsaul.ca/resume)  
+
+```
+## Oscar Saul  
+[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 2"
+```
