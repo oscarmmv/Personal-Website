@@ -17,7 +17,7 @@ This repopstiry contains the source code for my portfolio website.
 > Portfolio Page [ii](https://oscarsaul.ca/works)  
 > Resume Page [iii](https://oscarsaul.ca/resume)  
 
-```
+
 ## Oscar Saul  
 ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
-```
+
