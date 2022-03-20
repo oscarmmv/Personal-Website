@@ -1,6 +1,6 @@
 # Personal-Website
 
-This repopstiry contains the source code for my portfolio website.
+This repository contains the source code for my portfolio website.
 
 ## Stack Framework's
 
