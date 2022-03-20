@@ -11,7 +11,7 @@ This repopstiry contains the source code for my portfolio website.
 
 ## My Website
 
-**Index**
+**TOC**
 
 > Home Page [i](https://oscarsaul.ca/)  
 > Portfolio Page [ii](https://oscarsaul.ca/works)  
