@@ -13,9 +13,9 @@ This repository contains the source code for my portfolio website.
 
 **TOC**
 
-> *Home Page* [*i*](https://oscarsaul.ca/)  
-> *Portfolio Page* [*ii*](https://oscarsaul.ca/works)  
-> *Resume Page* [*iii*](https://oscarsaul.ca/resume) 
+> *Home Page* [*i.*](https://oscarsaul.ca/)  
+> *Portfolio Page* [*ii.*](https://oscarsaul.ca/works)  
+> *Resume Page* [*iii.*](https://oscarsaul.ca/resume) 
 
 
 ## Oscar Saul  
