@@ -44,15 +44,6 @@ a {
     padding-left: 20px;
 }
 
-#theme-icon {
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-    text-align: center;
-    color: var(--theme-color);
-    border-radius: 5px;
-    background: #88ccca;
-}
 
 /* Splash page */
 #splash-page {
@@ -146,3 +137,10 @@ a {
         margin-bottom: 2vh;
     }
 }
+
+@media screen and (max-width: 450px) {
+    .nav-ports {
+        font-size: 14px;
+    }
+}
+

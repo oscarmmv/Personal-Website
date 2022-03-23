@@ -1,5 +1,6 @@
-const swup = new Swup(); 
+const swup = new Swup(); // only this line when included with script tag
 var darktheme = true;
+var mobilePorts = false;
 
 // document.getElementById('loading-video').addEventListener('ended',myHandler,false);
 // function myHandler(e) {
@@ -31,6 +32,15 @@ function themeMode() {
   }
 }
 
+function navPorts() {
+  if(!mobilePorts) { 
+    mobilePorts = true;
+    document.getElementById("mobile-nav-port").style.display = "block";
+  } else {
+    mobilePorts = false;
+    document.getElementById("mobile-nav-port").style.display = "none";
+  }
+}
 function scrollToAbout() {
   document.getElementById("bio").scrollIntoView();
 }

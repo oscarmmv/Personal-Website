@@ -30,6 +30,14 @@ a {
 }
 
 /* Nav */
+#mobile-nav {
+    display: none;
+}
+
+#mobile-nav-port {
+    display: none;
+}
+
 #nav {
     position: fixed;
     padding: 20px;
@@ -42,16 +50,6 @@ a {
     padding-left: 20px;
 }
 
-
-#theme-icon {
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-    text-align: center;
-    color: var(--theme-color);
-    border-radius: 5px;
-    background: #88ccca;
-}
 
 /* Splash page */
 #splash-page {
@@ -167,6 +165,61 @@ a {
 }
 
 @media screen and (max-width: 800px) {
+    #logo-name, #works, #resume, #source {
+        display: none;
+        padding: 0;
+    }
+
+    #theme {
+        margin-left: -60px;
+        margin-top: 10px;
+        float: left;
+    }
+    
+    #mobile-nav {
+        z-index: 999;
+        overflow-y: none;
+        display: block;
+        width: 80px;
+        height: 90px;
+        background: radial-gradient(--main-color 1%, rgba(0,0,0,0) 35%);
+        right: 0;
+        position: absolute;
+        color: var(--main-text-color);
+        font-size: 8vw;
+    }
+
+    #nav-menu {
+        overflow-y: none;
+        width: 100%;
+        display: block;
+        margin-left: 30%;
+        margin-top: 30%;
+    }
+
+    #mobile-nav-port {
+        z-index: 99;
+        position: absolute;
+        /* margin-top: 10vh; */
+        background-color: var(--main-color);
+        font-size: 7vw;
+        width: 100vw;
+        height: 60vw;
+        user-select: none; 
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none; 
+        -ms-user-select: none; 
+    }
+    .mobile-ports {
+        color: #fff;
+        width: 100%;
+        margin-left: -20px;
+        margin-bottom: 20px;
+        list-style: none;
+        text-align: center;
+    }
+    
     .project-frame {
         all: initial;
     }
@@ -183,5 +236,12 @@ a {
         all: initial;
     }
 }
+
+@media screen and (max-width: 450px) {
+    .nav-ports {
+        font-size: 14px;
+    }
+}
+
 
   

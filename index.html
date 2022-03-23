@@ -20,25 +20,38 @@
     </script>
 </head>
 <body>
-<!--     <div id="loading-wrapper">
+    <!-- <div id="loading-wrapper">
         <video id="loading-video" width="320" height="240" controls muted autoplay>
             <source src="/assets/Loading.mp4" type="video/mp4">
         </video> 
     </div> -->
     <section id="nav">
         <ul>    
-            <a class="nav-ports" id="logo"><a href="/"><img id="nav-logo" src="/assets/logo.png"></img> scar Saul</a></li>
+            <a class="nav-ports" id="logo"><a id="logo-name" href="/"><img id="nav-logo" src="/assets/logo.png"></img> scar Saul</a></li>
             <li class="nav-ports" id="works"><a href="/works">Works</a></li>
             <li class="nav-ports" id="resume"><a href="/resume">Resume</a></li>
             <li class="nav-ports" id="source"><a href="https://github.com/oscarmmv"><i class="bi bi-github" ></i> Source</a></li>
-            <li class="nav-ports" id="theme"><div id="theme-icon" onclick="themeMode();"><i class="bi bi-brightness-high-fill"></i></i></div> </li>
+            <li class="nav-ports" id="theme"><a href="https://github.com/oscarmmv"><div id="theme-icon" onclick="themeMode();"><i class="bi bi-brightness-high-fill"></i></div></a></li>
         </ul>
         </section>
+    </section>
+    <section id="mobile-nav">
+        <div id="nav-menu">
+            <i class="bi bi-list" onclick="navPorts();"></i>
+        </div>
+    </section>
+    <section id="mobile-nav-port">
+        <ul>
+            <br><br>
+            <li class="mobile-ports"><a onclick="navPorts();" href="/">Home</a></li>
+            <li class="mobile-ports"><a onclick="navPorts();" href="/works">Works</a></li>
+            <li class="mobile-ports"><a onclick="navPorts();" href="/resume">Resume</a></li>
+        </ul>
     </section>
     <main id="swup" class="transition-fade">
         <section id="nav">
             <ul>    
-                <a class="nav-ports" id="logo"><a href="/"><img src="/assets/logo.png" style="height: 20px; float: left; margin-right: -25px;"></img> scar Saul</a></li>
+                <a class="nav-ports" id="logo"><a id="logo-name" href="/"><img id="logo-nav" src="/assets/logo.png" style="height: 20px; float: left; margin-right: -25px;"></img> scar Saul</a></li>
                 <li class="nav-ports" id="works"><a href="/works">Works</a></li>
                 <li class="nav-ports" id="resume"><a href="/resume">Resume</a></li>
                 <li class="nav-ports" id="source"><a href="https://github.com/oscarmmv"><i class="bi bi-github"></i> Source</a></li>
