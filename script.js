@@ -10,6 +10,8 @@ $(function() {
     AOS.init();
 });
 
+themeMode();
+
 function themeMode() {
   if(localStorage.getItem("theme") == "light") {
     localStorage.setItem("theme", "dark");
