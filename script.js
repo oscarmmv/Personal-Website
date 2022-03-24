@@ -1,5 +1,4 @@
-const swup = new Swup(); // only this line when included with script tag
-var darktheme = true;
+const swup = new Swup(); 
 var mobilePorts = false;
 
 // document.getElementById('loading-video').addEventListener('ended',myHandler,false);
@@ -10,9 +9,10 @@ var mobilePorts = false;
 $(function() {
     AOS.init();
 });
+
 function themeMode() {
-  if(darktheme) {
-    darktheme = false;
+  if(localStorage.getItem("theme") == "light") {
+    localStorage.setItem("theme", "dark");
     document.documentElement.style.setProperty('--main-color', '#e2e2e2');
     document.documentElement.style.setProperty('--main-text-color', '#000');
     document.documentElement.style.setProperty('--secondary-text-color', '#e7e7e7');
@@ -21,7 +21,7 @@ function themeMode() {
     document.getElementById("about-logo").src = "https://i.ibb.co/n8cPY4w/light-logo.jpg"; 
     document.getElementById("nav-logo").src = "https://i.ibb.co/n8cPY4w/light-logo.jpg"; 
   } else {
-    darktheme = true;
+    localStorage.setItem("theme", "light");
     document.documentElement.style.setProperty('--main-color', '#121212');
     document.documentElement.style.setProperty('--main-text-color', '#fff');
     document.documentElement.style.setProperty('--secondary-text-color', '#202023');
