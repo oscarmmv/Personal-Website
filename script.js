@@ -11,7 +11,7 @@ $(function() {
 });
 
 themeMode();
-
+themeMode();
 function themeMode() {
   if(localStorage.getItem("theme") == "light") {
     localStorage.setItem("theme", "dark");
