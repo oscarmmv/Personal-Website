@@ -204,7 +204,7 @@ a {
         background-color: var(--main-color);
         font-size: 7vw;
         width: 100vw;
-        height: 60vw;
+        height: 100vw;
         user-select: none; 
         -webkit-user-select: none;
         -khtml-user-select: none;

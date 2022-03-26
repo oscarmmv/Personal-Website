@@ -3,6 +3,16 @@
     src: url("/assets/SUIT-Regular.otf") format("opentype");
 }
 
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+
+
 :root {
     --main-color: #f0e7db;
     --main-text-color: #fff;
@@ -538,7 +548,7 @@ a {
         background: radial-gradient(--main-color 1%, rgba(0,0,0,0) 35%);
         right: 0;
         position: absolute;
-        color: var(--main-text-color);
+        /* color: var(--main-text-color); */
         font-size: 8vw;
     }
 
@@ -553,8 +563,6 @@ a {
     #mobile-nav-port {
         z-index: 99;
         position: absolute;
-        /* margin-top: 10vh; */
-        background-color: var(--main-color);
         font-size: 7vw;
         width: 100vw;
         height: 60vw;
@@ -563,7 +571,11 @@ a {
         -khtml-user-select: none;
         -moz-user-select: none; 
         -ms-user-select: none; 
+
+        -webkit-animation: fadeIn 0.5s;
+        animation: fadeIn 0.5s;
     }
+
     .mobile-ports {
         color: #fff;
         width: 100%;

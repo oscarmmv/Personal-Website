@@ -29,7 +29,20 @@
             <li class="nav-ports" id="source"><a href="https://github.com/oscarmmv"><i class="bi bi-github"></i> Source</a></li>
             <li class="nav-ports" id="theme"><div id="theme-icon" onclick="themeMode();"><i class="bi bi-brightness-high-fill"></i></i></div> </li>
         </ul>
-        </section>
+    </section>
+    <section id="mobile-nav">
+        <div id="nav-menu">
+            <i class="bi bi-list" href="/works" onclick="navPorts();"></i>
+        </div>
+    </section>
+    <section id="mobile-nav-port">
+        <ul>
+            <br><br>
+            <li class="mobile-ports"><a onclick="navPorts();" href="/">Home</a></li>
+            <li class="mobile-ports"><a onclick="navPorts();" href="/works">Works</a></li>
+            <li class="mobile-ports"><a onclick="navPorts();" href="/resume">Resume</a></li>
+            <li id="close" class="mobile-ports"><a id="close" href="/works" onclick="navPorts();" style="font-size: 25px;"><i class="bi bi-x-lg"></i></a></li>
+        </ul>
     </section>
     <main id="swup" class="transition-fade">
         <section id="nav">
@@ -93,9 +106,4 @@
         </section>
     </main>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        once: true
-      });
-    </script>
 </body>  

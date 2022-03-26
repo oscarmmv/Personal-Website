@@ -33,11 +33,10 @@
             <li class="nav-ports" id="source"><a href="https://github.com/oscarmmv"><i class="bi bi-github" ></i> Source</a></li>
             <li class="nav-ports" id="theme"><a href="https://github.com/oscarmmv"><div id="theme-icon" onclick="themeMode();"><i class="bi bi-brightness-high-fill"></i></div></a></li>
         </ul>
-        </section>
     </section>
     <section id="mobile-nav">
         <div id="nav-menu">
-            <i class="bi bi-list" onclick="navPorts();"></i>
+            <i href="/" class="bi bi-list" href="/" onclick="navPorts();"></i>
         </div>
     </section>
     <section id="mobile-nav-port">
@@ -46,6 +45,7 @@
             <li class="mobile-ports"><a onclick="navPorts();" href="/">Home</a></li>
             <li class="mobile-ports"><a onclick="navPorts();" href="/works">Works</a></li>
             <li class="mobile-ports"><a onclick="navPorts();" href="/resume">Resume</a></li>
+            <li class="mobile-ports"><a href="/" onclick="navPorts();" style="font-size: 25px;"><i class="bi bi-x-lg"></i></a></li>
         </ul>
     </section>
     <main id="swup" class="transition-fade">
@@ -175,7 +175,6 @@
                     </div>
                     <div id="contact-frame">
                         <form id="message" target="_blank" action="https://formsubmit.co/oscarsaul.mmv@gmail.com" method="POST">
-                            <!-- <div id="required-text" class="required">*All fields are required.</div> -->
                             <input id="username" class="username" type="text" name="name" class="form-control" placeholder="  Full Name" required>
                             <input id="email" type="email" name="email" class="form-control" placeholder="Email Address" required>
                             <textarea id="project"   placeholder="Project" class="form-control" name="message" rows="10" required></textarea>
