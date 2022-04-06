@@ -17,7 +17,7 @@ if(localStorage.getItem("theme") == "dark") {
   document.documentElement.style.setProperty('--secondary-color', '#e7e7e7');
   document.documentElement.style.setProperty('--theme-color', '#121212');
   document.getElementById("about-logo").src = "https://i.ibb.co/n8cPY4w/light-logo.jpg"; 
-  document.getElementById("nav-logo").src = "https://i.ibb.co/n8cPY4w/light-logo.jpg"; 
+  document.getElementById("nav-logo").src = "https://i.ibb.co/yBBB3WM/logo.png"; 
 } else {
   document.documentElement.style.setProperty('--main-color', '#121212');
   document.documentElement.style.setProperty('--main-text-color', '#fff');
@@ -25,7 +25,7 @@ if(localStorage.getItem("theme") == "dark") {
   document.documentElement.style.setProperty('--secondary-color', '#202023');
   document.documentElement.style.setProperty('--theme-color', '#fff');
   document.getElementById("about-logo").src = "https://i.ibb.co/b17jVHF/logo.jpg"; 
-  document.getElementById("nav-logo").src = "https://i.ibb.co/b17jVHF/logo.jpg"; 
+  document.getElementById("nav-logo").src = "https://i.ibb.co/yBBB3WM/logo.png"; 
 }
 
 function themeMode() {
@@ -37,7 +37,7 @@ function themeMode() {
     document.documentElement.style.setProperty('--secondary-color', '#e7e7e7');
     document.documentElement.style.setProperty('--theme-color', '#121212');
     document.getElementById("about-logo").src = "https://i.ibb.co/n8cPY4w/light-logo.jpg"; 
-    document.getElementById("nav-logo").src = "https://i.ibb.co/n8cPY4w/light-logo.jpg"; 
+    document.getElementById("nav-logo").src = "https://i.ibb.co/yBBB3WM/logo.png"; 
   } else {
     localStorage.setItem("theme", "light");
     document.documentElement.style.setProperty('--main-color', '#121212');
@@ -46,7 +46,7 @@ function themeMode() {
     document.documentElement.style.setProperty('--secondary-color', '#202023');
     document.documentElement.style.setProperty('--theme-color', '#fff');
     document.getElementById("about-logo").src = "https://i.ibb.co/b17jVHF/logo.jpg"; 
-    document.getElementById("nav-logo").src = "https://i.ibb.co/b17jVHF/logo.jpg"; 
+    document.getElementById("nav-logo").src = "https://i.ibb.co/yBBB3WM/logo.png"; 
   }
 }
 
