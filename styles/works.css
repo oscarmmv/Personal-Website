@@ -165,7 +165,7 @@ a {
 }
 
 .footer {
-    background-color: green;
+    background-color: var(--main-text-color);
     height:20vh;
 }
 
