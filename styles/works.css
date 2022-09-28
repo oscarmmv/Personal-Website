@@ -247,6 +247,13 @@ a {
         font-size: 14px;
     }
 }
+/* Prevent cutoff in ultrawide displays */
+@media screen and (min-width: 1921px) {
+    #old-projects {
+        padding-bottom: 35vh;
+        background-color: var(--main-color);
+    }
+}
 
 
   
