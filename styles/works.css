@@ -164,6 +164,11 @@ a {
     color: #7e8490;
 }
 
+.footer {
+        background-color: var(--main-color);
+        height:25vh;
+    }
+
 @media screen and (max-width: 800px) {
     #logo-name, #works, #resume, #source {
         display: none;
@@ -237,7 +242,7 @@ a {
     }
     .footer {
         background-color: var(--main-color);
-        height:25vh;
+        height:0;
     }
 }
 
