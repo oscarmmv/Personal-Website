@@ -166,7 +166,7 @@ a {
 
 .footer {
         background-color: var(--main-color);
-        height:25vh;
+         padding-bottom: 25vh;
     }
 
 @media screen and (max-width: 800px) {
