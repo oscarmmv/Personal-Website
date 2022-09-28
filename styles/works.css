@@ -115,6 +115,11 @@ a {
     background-size: 70px 2px;
 }
 
+#old-projects {
+    padding-bottom: 20vh;
+    background-color: var(--main-color);
+}
+
 #old-projects-header {
     text-decoration: none;
     background-image: linear-gradient(to right, #88ccca, #88ccca);
