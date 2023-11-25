@@ -1,6 +1,5 @@
 const swup = new Swup(); 
 var mobilePorts = false;
-
 // document.getElementById('loading-video').addEventListener('ended',myHandler,false);
 // function myHandler(e) {
 //   document.getElementById('loading-wrapper').style.display = 'none';
