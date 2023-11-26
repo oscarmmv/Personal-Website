@@ -1,0 +1,146 @@
+@font-face {
+    font-family: Suit;
+    src: url("/assets/SUIT-Regular.otf") format("opentype");
+}
+
+:root {
+    --main-color: #f0e7db;
+    --main-text-color: #fff;
+    --secondary-color: #202023;
+}
+
+* {
+    margin: 0;
+    overflow-x: hidden;
+    font-family: "Suit";
+    max-height: 100vh;
+}
+
+html {
+    background-color: var(--main-color);
+}
+
+h3 {
+    text-align: left;
+    color: var(--main-text-color);
+    font-size: 22px;
+    font-family: "Suit";
+}
+a {
+    text-decoration: none;
+    color: var(--main-text-color);
+}
+
+/* Nav */
+#nav {
+    position: fixed;
+    padding: 20px;
+}
+
+.nav-ports {
+    color: var(--main-text-color);
+    list-style-type: none;  
+    display: inline;
+    padding-left: 20px;
+}
+
+
+/* Splash page */
+#splash-page {
+    background-color: var(--main-color);
+    height: 200vh;
+    width: 100vw;
+}
+
+#splash-heading-wrapper {
+    background-color: var(--main-color);
+    padding-top: 20vh;
+    text-align: center;
+}
+
+#name {
+    color: var(--main-text-color);
+    font-size: 54px;
+    font-family: "Suit";
+}
+
+#sub-heading {
+    color: #669997;
+    font-size: 14px;
+    padding-bottom: 50px;
+}
+
+.splash-button {  
+    color: #88ccca;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 5px;
+    border: solid #88ccca;
+    border-width: 2px;
+}
+
+#about-button {
+    width: 100px;
+    margin-right: 7px;
+    background-color: var(--main-color);
+    font-family: "Suit";
+}
+
+#resume-button{
+    color: var(--main-color);
+    width: 100px;
+    margin-left: 7px;
+    background-color: #88ccca;
+}
+
+#speciality-wrapper {
+    width: 800px;
+    height: 500px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.speciality {
+    width: 250px;
+    height: 200px;
+    display: inline-block;
+    margin-left: 11px;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+}
+
+.my-speciality {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.speciality-desc {
+    color: #7e8490;
+    margin-left: -10px;
+}
+
+#spec-icon {
+    color: #88ccca;
+    padding-right: 10px;
+}
+
+@media screen and (max-width: 800px) {
+    #speciality-wrapper {
+        max-width: 100vw;
+        min-height: 700px;
+    }
+    .speciality {   
+        display: block;
+        margin: auto;
+        margin-bottom: 2vh;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .nav-ports {
+        font-size: 14px;
+    }
+}
+
