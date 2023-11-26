@@ -50,32 +50,35 @@ p,li{
 
 @media (max-width: 600px) {
     #wrapper {
-        width: 150vw;
+        margin: auto;
+        width: 90%;
     }
-    
+}
+
+@media (pointer:none), (pointer:coarse) {
+    #wrapper {
+        width: 90%;
+        margin: auto;
+    }
     h1 {
-        font-size: 42px;
+        font-size: 66px;
     }
     
     h2 {
-        font-size: 35px;
+        font-size: 36px;
     }
     
     h3 {
+        font-size: 26px;
+        display: inline-block;
+    }
+    p, div {
         font-size: 30px;
     }
-    p, div{
-        font-size: 25px;
-    }
-    #back {
-        font-size: 18px;
+    #sub-head, #time {
+        font-size: 20px;
     }
     
-    #sub-head {
-        font-size: 18px;
-    }
-    #time{
-        font-size: 15px;
-    }
 }
+
 
