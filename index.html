@@ -1,34 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
-    <meta name="description" content="Computer Science and Business student. I write full-stack web applications and backend services. I am interested in cybersecurity—Currently pursuing A+ and Security+ certs. More about me.">
+    <meta name="description" content="Oscar Saul - Computer Science and Business student specializing in full-stack web development and cybersecurity.">
     <meta name="og:email" content="oscarsaul.mmv@gmail.com"/>
     <meta name="og:phone_number" content="437-219-3454"/>
     <link rel="icon" href="logo.png">
     <title>Oscar Saul</title>
 </head>
-<body>
+<body itemscope itemtype="http://schema.org/Person">
     <script src="https://unpkg.com/swup@4"></script>
     <script>
         const swup = new Swup();
     </script>
     <div id="swup">
         <div id="wrapper">
-            <h1>oscar saul</h1>   
-            <div>Computer Science and Business student. I write full-stack web applications and backend services. I am interested in cybersecurity&mdash;Currently pursuing A+ and Security+ certs. More <a href="about-me">about me</a>.</div>
+            <h1 itemprop="name">oscar saul</h1>   
+            <div itemprop="description">Computer Science and Business student. I write full-stack web applications and backend services. I am interested in cybersecurity&mdash;Currently pursuing A+ and Security+ certs. More <a href="about-me">about me</a>.</div>
             <h2>Projects</h2>
             <section>
                 <ul>
                     <li>
-                        <p><a href="social-crawler">Social Crawler</a> - a selenium based web crawler that retrieves user metrics across social media.</p>
+                        <p itemprop="projects"><a href="social-crawler">Social Crawler</a> - a selenium based web crawler that retrieves user metrics across social media.</p>
                     </li>
                     <li>
-                        <p><a href="ai-playlist">AI Generated Playlist</a> - a web based application that uses Open Ai api to generate a unique playlist.</p>
+                        <p itemprop="projects"><a href="ai-playlist">AI Generated Playlist</a> - a web based application that uses Open Ai api to generate a unique playlist.</p>
                     </li>
                     <li>
-                        <p><a href="mouse-heatmap">Mouse Heatmap</a> - lightweight application that stores mouse points and provides playback of heatmap.</p>
+                        <p itemprop="projects"><a href="mouse-heatmap">Mouse Heatmap</a> - lightweight application that stores mouse points and provides playback of heatmap.</p>
                     </li>
                 </ul>
             </section>
@@ -36,11 +37,11 @@
             <section>
                 <ul>
                     <div>
-                        <h3>RecruitForMe</h3><p id="time" style="display: inline-block;">2022 - 2023</p>
+                        <h3 itemprop="jobTitle">RecruitForMe</h3><p id="time" style="display: inline-block;">2022 - 2023</p>
                         <p>Software Developer for <a href="https://recruitforme.com">recruitforme</a>, a networking based database</p>
                     </div>
                     <div>
-                        <h3>AWS Certificate</h3><p id="time" style="display: inline-block;">2022</p>
+                        <h3 itemprop="JobTitle">AWS Certificate</h3><p id="time" style="display: inline-block;">2022</p>
                         <p>Certified in Lambda, DynamoDB, Fargate, S3, and Elastic Beanstalk.</p>
                     </div>
                 </ul>
