@@ -2,7 +2,6 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <script src="https://unpkg.com/swup@4"></script>
         <link rel="stylesheet" href="style.css">
     </head>
 <body>
@@ -21,16 +20,9 @@
         </div>
     </div>
     <script src="https://unpkg.com/swup@2.1.0/dist/swup.min.js"></script>
+    <script src="https://unpkg.com/swup@4"></script>
     <script>
-        const swup = new Swup({
-        plugins: [new SwupJsPlugin({
-            containers: ["#swup"],
-            animateHistoryBrowsing: false,
-            plugins: [new SwupHeadPlugin()],
-            linkSelector: 'a[data-swup]'
-        })],
-        base: '/Personal-Website'
-        });
+        const swup = new Swup();
     </script>
 </body>
 </html>
