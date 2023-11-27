@@ -11,9 +11,11 @@
     <title>Oscar Saul</title>
 </head>
 <body itemscope itemtype="http://schema.org/Person">
-    <script src="https://unpkg.com/swup@4"></script>
+    <script src="https://unpkg.com/@swup/overlay-theme@2"></script>
     <script>
-        const swup = new Swup();
+        const swup = new Swup({
+            plugins: [new SwupOverlayTheme()]
+        });
     </script>
     <div id="swup">
         <div id="wrapper">
@@ -38,7 +40,7 @@
                 <ul>
                     <div>
                         <h3 itemprop="jobTitle">RecruitForMe</h3><p id="time" style="display: inline-block;">2022 - 2023</p>
-                        <p>Software Developer (Co-op) for <a href="https://recruitforme.com">recruitforme</a>, a networking based database</p>
+                        <p>Software Developer for <a href="https://recruitforme.com">recruitforme</a>, a networking based database</p>
                     </div>
                     <div>
                         <h3 itemprop="JobTitle">AWS Certificate</h3><p id="time" style="display: inline-block;">2022</p>
