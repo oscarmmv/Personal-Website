@@ -81,4 +81,15 @@ p,li{
     
 }
 
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #0e1111;
+        color: white;
+    }
+
+    h1, h2, h3, p, li, #back, #sub-head, #time {
+        color: white;
+    }
+}
+
 
