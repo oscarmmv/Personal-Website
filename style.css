@@ -1,6 +1,6 @@
 .swup-transition-overlay {
     background-color: #0e1111;
-    transition: background-color 0.25s;
+    transition: background-color 0.75s;
 }
   
 #wrapper {
@@ -121,8 +121,11 @@ a:not(#back) {
         color: #fff;
     }
 
-    h1, h2, h3, p, li, #back, #sub-head, #time {
+    h1, h2, h3, p, li, #back,#time {
         color: #fff;
+    }
+    #sub-head {
+        color: #9d9696;
     }
 
     .swup-transition-overlay {
