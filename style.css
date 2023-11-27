@@ -1,6 +1,6 @@
 .swup-transition-overlay {
     background-color: #0e1111;
-    transition: background-color 0.35s;
+    transition: background-color 0.75s;
 }
   
 #wrapper {
@@ -89,6 +89,30 @@ img {
     }
     
 }
+
+a:not(#back)::before {  
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background: hsl(200 100% 80%);
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform .3s ease;
+}
+
+a:not(#back):hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+a:not(#back) {
+    position: relative;
+    width: min-content;
+    white-space: nowrap;
+}
+  
 
 
 @media (prefers-color-scheme: dark) {
