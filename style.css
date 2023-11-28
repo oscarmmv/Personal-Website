@@ -13,14 +13,21 @@ body {
     font-family: "Oxygen", sans-serif;
     line-height: 1.5; 
     letter-spacing: 0.15px; 
+    background-color: #FAFAFA;
 }
 
 a:visited,#mail, a {
     color: #5286df;
 }
 
+hr {
+    height: 1px; 
+    background-color: #eeeeee; 
+    border: none; 
+
+}
 h1 {
-    font-size: 26px;
+    font-size: 36px;
 }
 
 h2 {
