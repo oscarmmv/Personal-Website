@@ -16,7 +16,8 @@
     <link rel="stylesheet" href="https://unpkg.com/@swup/overlay-theme/dist/OverlayTheme.css">
     <script>
         const swup = new Swup({
-            plugins: [new SwupOverlayTheme()]
+            plugins: [new SwupOverlayTheme()],
+            linkSelector: 'a:not(.no-swup)',
         });
     </script>
     <div id="swup">
@@ -50,7 +51,7 @@
                     </div>
                 </ul>
             </section><br>
-            <p id="sub-head">Legacy Version available <a href="LEGACY/legacy_index">here</a>.</p>
+            <p id="sub-head">Legacy Version available <a href="LEGACY/legacy_index" class="no-swup">here</a>.</p>
         </div>
     </div>
 </body>
