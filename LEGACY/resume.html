@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:image:type" content="/assets/embed-logo.png">
+    <meta name="og:site_name" content="Oscar Saul | Full Stack Portfolio"/>
+    <meta name="og:description" content="Oscar is a junior high-school developer based in Markham, Ontario. See more? | Works | Resume | Contacts |"/>
+    <meta name="og:email" content="oscarsaul.mmv@gmail.com"/>
+    <meta name="og:phone_number" content="437-219-3454"/>
+    <title>Resume - Oscar Saul</title>
+    <link rel="icon" href="assets/logo.png">
+    <link rel="Stylesheet" href="styles/index.css" type="text/css">
+    <link rel="Stylesheet" href="styles/resume.css" type="text/css">
+    <link rel="Stylesheet" href="styles/works.css" type="text/css">
+    <link rel="Stylesheet" href="styles/transitions.css" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>  
+    <script defer src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>  
+    <script type="text/javascript" defer src="script.js"></script>
+    <link href="styles/transitions.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</head>
+
+<body>
+    <section id="nav">
+        <ul>    
+            <a class="nav-ports" id="logo"><a id="logo-name" href="legacy_index"><img src="assets/logo.png" style="height: 20px; float: left; margin-right: -25px;"></img> scar Saul</a></li>
+            <li class="nav-ports" id="works"><a href="works">Works</a></li>
+            <li class="nav-ports" id="resume"><a href="resume">Resume</a></li>
+            <li class="nav-ports" id="source"><a href="https://github.com/oscarmmv"><i class="bi bi-github"></i> Source</a></li>
+            <li class="nav-ports" id="theme"><div id="theme-icon" onclick="themeMode();"><i class="bi bi-brightness-high-fill"></i></i></div> </li>
+        </ul>
+    </section>
+    <section id="mobile-nav">
+        <div id="nav-menu">
+            <i class="bi bi-list" onclick="navPorts();"></i>
+        </div>
+    </section>
+    <section id="mobile-nav-port">
+        <ul>
+            <br><br>
+            <li class="mobile-ports"><a onclick="navPorts();" href="legacy_index">Home</a></li>
+            <li class="mobile-ports"><a onclick="navPorts();" href="works">Works</a></li>
+            <li class="mobile-ports"><a onclick="navPorts();" href="resume">Resume</a></li>
+            <li class="mobile-ports"><a onclick="navPorts();" style="font-size: 25px;"><i class="bi bi-x-lg"></i></a></li>
+        </ul>
+    </section>
+    <main id="swup" class="transition-fade">
+        <section id="nav">
+            <ul>    
+                <a class="nav-ports" id="logo"><a id="logo-name" href="legacy_index"><img src="assets/logo.png" style="height: 20px; float: left; margin-right: -25px;"></img> scar Saul</a></li>
+                <li class="nav-ports" id="works"><a href="works">Works</a></li>
+                <li class="nav-ports" id="resume"><a href="resume">Resume</a></li>
+                <li class="nav-ports" id="source"><a href="https://github.com/oscarmmv"><i class="bi bi-github"></i> Source</a></li>
+                <li class="nav-ports" id="theme"><div id="theme-icon" onclick="themeMode();"><i class="bi bi-brightness-high-fill"></i></i></div> </li>
+            </ul>
+        </section>
+    
+        <section id="splash-page">
+            <div id="splash-heading-wrapper">
+                <h1 class="splash-heading" id="name" data-aos="zoom-out" data-aos-duration="1000">My Resume</h1>
+                <h2 class="splash-heading" id="sub-heading">Developer (Frontend / Backend / Design)</h2>
+                <a href="works" class="splash-button" id="about-button">Portfolio</a>
+                <a href="assets/Resume.pdf" class="splash-button" id="resume-button"><i class="bi bi-download"></i> Resume</a>
+            </div>
+            <div id="speciality-wrapper">
+                <div id="uiux-frame"class="speciality">
+                    <h3 class="my-speciality">UI/UX</h3>
+                    <p class="speciality-desc">
+                        <ul class="speciality-desc"><br>
+                            <li><i id="spec-icon" class="bi bi-check2"></i>Design user interfaces</li>
+                            <li><i id="spec-icon" class="bi bi-check2"></i>Quaility user experinces</li>
+                            <li><i id="spec-icon" class="bi bi-check2"></i>Mockup</li>
+                            <li><i id="spec-icon" class="bi bi-check2"></i>Speed & Performance</li>
+                        </ul>
+                    </p>
+                </div>
+                <div id="webapp-frame"class="speciality">
+                    <h3 class="my-speciality">Web Applications</h3>
+                    <ul class="speciality-desc"><br>
+                        <li><i id="spec-icon" class="bi bi-check2"></i>Functionality</li>
+                        <li><i id="spec-icon" class="bi bi-check2"></i>Utility</li>
+                        <li><i id="spec-icon" class="bi bi-check2"></i>Server Side Scripting</li>
+                        <li><i id="spec-icon" class="bi bi-check2"></i>Speed & Performance</li>
+                    </ul>
+                </div>
+                <div id="gamedesign-frame"class="speciality">
+                    <h3 class="my-speciality">Game Design</h3>
+                    <ul class="speciality-desc"><br>
+                        <li><i id="spec-icon" class="bi bi-check2"></i>Design</li>
+                        <li><i id="spec-icon" class="bi bi-check2"></i>Gameplay Theory</li>
+                        <li><i id="spec-icon" class="bi bi-check2"></i>Backend</li>
+                        <li><i id="spec-icon" class="bi bi-check2"></i>Unity & Blender</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+    <section>
+    </main>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+</body>  
