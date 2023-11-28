@@ -87,6 +87,25 @@ img {
     #sub-head, #time {
         font-size: 20px;
     }
+
+    div, a, p {
+        font-size: 12px;
+    }
+    h1 {
+        font-size: 26px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    #time {
+        font-size: 8px;
+    }
     
 }
 
@@ -132,24 +151,6 @@ a:not(#back) {
         background-color: #121617;
     }
 
-    div, a, p {
-        font-size: 12px;
-    }
-    h1 {
-        font-size: 26px;
-    }
-
-    h2 {
-        font-size: 20px;
-    }
-
-    h3 {
-        font-size: 16px;
-    }
-
-    #time {
-        font-size: 8px;
-    }
 }
 
 
