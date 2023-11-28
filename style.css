@@ -153,6 +153,11 @@ a:not(#back) {
     #sub-head {
         color: #9d9696;
     }
+    hr {
+        height: 1px; 
+        background-color: #121617; 
+        border: none; 
+    }
 
     .swup-transition-overlay {
         background-color: #121617;
