@@ -171,7 +171,7 @@ a:not(#back) {
   
 
 
-/* @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
     body {
         background-color: #0e1111;
         color: #fff;
@@ -195,6 +195,6 @@ a:not(#back) {
 
 }
 
- */
+
 
 
