@@ -64,6 +64,36 @@ img {
     width: 100%;
 }
 
+#me {
+    border-radius: 50%;
+    width: 200px;
+    aspect-ratio: 1/1;
+}
+
+#contacts {
+    display: inline-block;
+    margin-left: 50px;
+    transform: translateY(-110px);
+}
+
+#contact-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+#contact {
+    flex: 0 0 50%;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+
+
+
+
 @media (max-width: 600px) {
     #wrapper {
         margin: auto;
@@ -141,7 +171,7 @@ a:not(#back) {
   
 
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
     body {
         background-color: #0e1111;
         color: #fff;
@@ -165,6 +195,6 @@ a:not(#back) {
 
 }
 
-
+ */
 
 
