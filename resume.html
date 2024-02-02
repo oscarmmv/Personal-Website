@@ -24,8 +24,17 @@
             <a id="back" href="/">← oscar saul </a>
             <h1>Resume</h1>   
             <div>Updated February 2024 <a href="assets/OscarSaulResume.pdf" download>Download Resume</a></div>
-            <object data="assets/OscarSaulResume.pdf" type="application/pdf" style="min-height:104vh;width:100%"></object>
+            <object id="pdf-embed" data="assets/OscarSaulResume.pdf" type="application/pdf" style="min-height: 104vh; width: 100%;"></object>
+            <style>
+                @media (pointer:none), (pointer:coarse) {
+                    #pdf-embed {
+                        min-height: initial;
+                        width: auto;
+                    }
+                }
+            </style>
         </div>
         <br><br>
     </div>
+    
 </body>
