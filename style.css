@@ -8,6 +8,18 @@
     width: 600px;
 }
 
+#resume-wrapper {
+    margin: auto;
+    width: 600px;
+    background-color: red;
+    height: 100vh;
+}
+
+#pdf-embed {
+    width: 100%;
+    height: 102.35%;
+}
+
 body {
     margin-top: 55px;
     font-family: "Oxygen", sans-serif;
@@ -47,6 +59,10 @@ p,li{
     color: #636b7987;
     letter-spacing: inherit; 
     text-decoration: none;
+}
+
+footer {
+    height: 10vh;
 }
 
 #sub-head {
@@ -106,6 +122,17 @@ img {
         width: 90%;
         margin: auto;
     }
+    #resume-wrapper {
+        width: 90%;
+        margin: auto;
+        height: 60vh;
+    }
+
+    #pdf-embed {
+        width: 100%;
+        height: 100%;
+    }
+
     h1 {
         font-size: 66px;
     }
@@ -157,6 +184,10 @@ img {
         box-sizing: border-box;
         padding: 5px;
     } 
+
+    footer {
+        height: 0;
+    }
     
 }
 
