@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../style.css">
+        <meta name="description" content="Oscar Saul - Computer Science and Business student specializing in full-stack web development and cybersecurity.">
+        <meta name="og:email" content="oscarsaul.mmv@gmail.com"/>
+        <meta name="og:phone_number" content="437-219-3454"/>
+        <link rel="icon" href="logo.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <title>Oscar Saul</title>
+    </head>
+<body>
+    <script src="https://unpkg.com/swup@4"></script>
+    <script src="https://unpkg.com/@swup/overlay-theme@2"></script>
+    <link rel="stylesheet" href="https://unpkg.com/@swup/overlay-theme/dist/OverlayTheme.css">
+    <script>
+        const swup = new Swup({
+            plugins: [new SwupOverlayTheme()]
+        });
+    </script>
+    <div id="swup">
+        <div id="wrapper">
+            <a id="back" href="/">← oscar saul </a><a id="back" href="../devlogs">/ devlogs </a>
+            <h1>Devlog #1 - The Making of an Epic Dungeon Crawler</h1>   
+            <a id="back">March 19. 2024 - Published by Oscar Saul</a>
+            <br><br>
+            <div>This devlog is the first entry of many for this ARPG dungeon crawler being developed with <b>Godot4</b>. In this post, I would like to share the various features and mechanics I have planned for the development of this game.</div>
+            <br>
+            <div>The asset used in this project are from <a href="https://kaylousberg.itch.io">kaylousberg</a></div>
+            <br>
+            <li><a href="https://kaylousberg.itch.io/kaykit-adventurers">Kaykit Adventurers</a></li>
+            <li><a href="https://kaylousberg.itch.io/kaykit-dungeon-remastered">Kaykit Dungeon Remastered</a></li>
+            <li><a href="https://kaylousberg.itch.io/kaykit-skeletons">Kaykit Skeletons</a></li>
+            
+            <h2>Player Classes</h2>
+            <div>The player can choose their class from options, such as fighter, barbarian, druid, ranger, and wizard. Each class affects weapon interactions and play-styles to give a unique and refreshing experience on every run. </div>
+            <br>
+            <img src="assets/contents.png">
+            <br><br>
+            <h2>Key System</h2>
+            <div>I have implemented a key system that can unlock doors and chests by referencing the data containers from resources. This will be especially helpful in the future when creating rooms with procedural generation. </div>
+            <br>
+            <img src="assets/keydoor.gif">
+            <br><br>
+            <h2>Enemy Spawning and Pathfinding</h2>
+            <br>
+            <img src="assets/enemy.gif">
+            <div>Using Godot's nav agents, I create a pathfinder script to target the player's position and move towards them, avoiding collision shapes.</div>
+            <br><br>
+            <div>That is it for the first entry of the devlog. In the future, I plan on fully implementing the class features and weapon interactions.</div>
+            <br><br><br><br><br>
+        </div>
+    </div>
+</body>
