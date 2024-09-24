@@ -20,12 +20,41 @@
     height: 102.35%;
 }
 
+@font-face {
+    font-family: 'Mofugu';
+    src: url('fonts/Mofugu.otf') format('opentype');
+}
+
 body {
     margin-top: 55px;
     font-family: "Oxygen", sans-serif;
     line-height: 1.5; 
     letter-spacing: 0.15px; 
     background-color: #FAFAFA;
+}
+
+.quote {
+    border-left: 4px solid #5286df;
+    padding-left: 10px;
+    margin-left: 0;
+    background-color: rgba(82, 134, 223, 0.15);
+}
+
+@keyframes slideIn {
+    from {
+        left: -300px;
+    }
+    to {
+        left: -170px;
+    }
+}
+
+video {
+    filter: brightness(0) invert(0) blur(0.7px);
+    opacity: 0.6;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    animation: slideIn 0.54s ease-in forwards 2.5s;
 }
 
 a:visited,#mail, a {
@@ -38,6 +67,9 @@ hr {
     border: none; 
 
 }
+
+
+
 h1 {
     font-size: 36px;
 }
@@ -49,11 +81,20 @@ h2 {
 h3 {
     font-size: 16px;
     display: inline-block;
+    margin-bottom: 0;
 }
 
 p,li{
     margin-bottom: 10px;
 }
+
+
+
+li::marker {
+    color: rgba(255, 255, 255, 0.6);
+
+}
+
 
 #back {
     color: #636b7987;
@@ -224,6 +265,11 @@ a:not(#back) {
     body {
         background-color: #0e1111;
         color: #fff;
+    }
+
+    video {
+        filter: brightness(0) invert(1) blur(0.7px);
+        opacity: 1;
     }
 
     h1, h2, h3, p, li, #back,#time {
