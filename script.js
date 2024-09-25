@@ -86,12 +86,15 @@ document.addEventListener('DOMContentLoaded', function() {
     let index = 0;
 
     function type() {
+        if (index === 0) {
+            textElement.textContent = ""; 
+        }
         if (index < text.length) {
             textElement.textContent += text.charAt(index);
             index++;
-            setTimeout(type, 100); // Adjust the speed by changing the timeout value
+            setTimeout(type, 100); 
         } else {
-            cursorElement.style.display = 'none'; // Hide cursor after typing is done
+            cursorElement.style.display = 'none'; 
         }
     }
 
