@@ -188,6 +188,7 @@ footer {
     padding-left: 10px;
     margin-left: 0;
     background-color: var(--light-quote-bg-color);
+    border-radius: 5px;
 }
 
 video {
