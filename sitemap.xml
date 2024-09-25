@@ -9,34 +9,45 @@
 
 <url>
   <loc>https://oscarsaul.ca/</loc>
-  <lastmod>2023-11-26T18:44:34+00:00</lastmod>
+  <lastmod>2024-09-25T22:30:26+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
+  <loc>https://oscarsaul.ca/arbitrage-trader</loc>
+  <lastmod>2024-09-25T22:30:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
   <loc>https://oscarsaul.ca/about-me</loc>
-  <lastmod>2023-11-26T18:44:34+00:00</lastmod>
+  <lastmod>2024-09-25T22:30:26+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://oscarsaul.ca/social-crawler</loc>
-  <lastmod>2023-11-26T18:44:34+00:00</lastmod>
+  <lastmod>2024-09-25T22:30:26+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://oscarsaul.ca/ai-playlist</loc>
-  <lastmod>2023-11-26T18:44:34+00:00</lastmod>
+  <lastmod>2024-09-25T22:30:26+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://oscarsaul.ca/mouse-heatmap</loc>
-  <lastmod>2023-11-26T18:44:34+00:00</lastmod>
+  <lastmod>2024-09-25T22:30:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://oscarsaul.ca/dns-config</loc>
+  <lastmod>2024-09-25T22:30:26+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://oscarsaul.ca/now</loc>
-  <lastmod>2023-11-26T18:44:34+00:00</lastmod>
+  <lastmod>2024-09-25T22:30:26+00:00</lastmod>
   <priority>0.64</priority>
 </url>
+
 
 
 </urlset>
