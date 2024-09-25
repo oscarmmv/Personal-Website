@@ -44,6 +44,9 @@ h2 {
 }
 
 h3 {
+    margin-left: -35px;
+}
+h3 {
     font-size: 16px;
     margin-bottom: 0;
 }
