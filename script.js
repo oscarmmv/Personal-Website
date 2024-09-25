@@ -78,4 +78,24 @@ document.addEventListener('DOMContentLoaded', function() {
         document.body.classList.remove('no-overflow');
         document.body.style.paddingRight = '';
     }, 3000);
+
+    // Typing effect
+    const textElement = document.getElementById('text');
+    const cursorElement = document.getElementById('cursor');
+    const text = "oscar saul.";
+    let index = 0;
+
+    function type() {
+        if (index < text.length) {
+            textElement.textContent += text.charAt(index);
+            index++;
+            setTimeout(type, 100); // Adjust the speed by changing the timeout value
+        } else {
+            cursorElement.style.display = 'none'; // Hide cursor after typing is done
+        }
+    }
+
+    setTimeout(() => {
+        type();
+    }, 3000); // Start typing after 3 seconds
 });

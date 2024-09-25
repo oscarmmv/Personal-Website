@@ -79,6 +79,22 @@ li::marker {
     color: rgba(0, 0, 0, 0.6);
 }
 
+#cursor {
+  display: inline-block;
+  width: 10px;
+  animation: blink 1s step-end infinite;
+  color: var(--dark-quote-border-color);
+}
+
+@keyframes blink {
+  from, to {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
 #source {
     display: block;
 }
