@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
-    <meta name="description" content="Oscar Saul - Computer Science and Business student specializing in full-stack web development and cybersecurity.">
+    <script src="script.js"></script>
+    <meta name="description" content="Oscar Saul - 👋 Hey I’m Oscar, a Computer Science and Business student focused on developing full-stack web applications and backend services.">
     <meta name="og:email" content="oscarsaul.mmv@gmail.com"/>
     <meta name="og:phone_number" content="437-219-3454"/>
     <link rel="icon" href="logo.png">
     <title>Oscar Saul</title>
-    <style>
-        
-    </style>
+    
+    
 </head>
 <body itemscope itemtype="http://schema.org/Person">
     <script src="https://unpkg.com/swup@4"></script>
@@ -29,48 +29,9 @@
                 <source src="assets/Animation transparent.webm" type="video/webm">
             </video>
         </div>
-        <div id="overlay" ></div>
-        <script>
-            const video = document.getElementById('animated-video');
-            const delay = 2000;
-            video.addEventListener('loadedmetadata', () => {
-                setTimeout(() => {
-                    video.pause();
-                    setTimeout(() => {
-                        video.play();
-                    }, 2000);
-                }, delay);
-            });
-    
-            document.getElementById('animated-video').addEventListener('contextmenu', function(e) {
-                e.preventDefault();
-            });
-    
-            // Function to get scrollbar width
-            function getScrollbarWidth() {
-                return window.innerWidth - document.documentElement.clientWidth;
-            }
-     
-    
-            // Remove overlay after slideIn animation
-            const overlay = document.getElementById('overlay');
-            const scrollbarWidth = getScrollbarWidth();
-            document.body.classList.add('no-overflow');
-            document.body.style.paddingRight = `${scrollbarWidth}px`;
-    
-            video.addEventListener('animationend', (event) => {
-                if (event.animationName === 'slideIn') {
-                    overlay.classList.add('fade-out');
-                    setTimeout(() => {
-                        overlay.remove();
-                        document.body.classList.remove('no-overflow');
-                        document.body.style.paddingRight = '';
-                    }, 1000); // Match this duration with the CSS transition duration
-                }
-            });
-        </script>
         
-        <div id="wrapper" style="position: relative; top: 150px;">
+        <div class="content" id="wrapper" >
+            <h1 itemprop="name">oscar saul.</h1>   
             <div class="quote" itemprop="description" style="top: -300px;">Hey 👋, I'm a Computer Science and Business student focused on developing full-stack web applications and backend services. I have a strong interest in cybersecurity, fintech, and 3D modeling. Currently, I’m exploring the applications of Nmap's, modeling in Fusion 360, and automating  <a href="https://github.com/oscarmmv/arbitrage-trader">arbitrage opportunities</a> through web scraping. Learn more <a href="about-me">about me</a>. 👈😎</div>
             <hr>
             <h2>Projects</h2>
