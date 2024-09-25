@@ -54,20 +54,23 @@ body {
         transform: translate(-50%, -50%);
     }
     to {
-        top: -80px;
-        left: -240px;
+        top: -150px;
+        left: -340px;
         transform: translate(0, 0);
+        transform: scale(0.6666);
     }
 }
 
 @keyframes slideIn2 {
     from {
-        top: -80px;
-        left: -240px;
+        transform: scale(0.6666);
+        top: -150px;
+        left: -340px;
     }
     to {
-        top: -80px;
-        left: -160px;
+        transform: scale(0.6666);
+        top: -150px;
+        left: -300px;
     }
 }
 

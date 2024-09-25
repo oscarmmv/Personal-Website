@@ -25,36 +25,45 @@
     </script>
     <div id="swup">
         <div id="wrapper" style="position: relative;">
-            <video id="animated-video" style="width: auto; height: 300px; position: absolute; top: calc(50vh - 50px); left: 50%; transform: translate(-50%, -50%); z-index: 2;" autoplay muted disablePictureInPicture>
+            <video id="animated-video" style="width: auto; height: 450px; position: absolute; top: calc(50vh - 50px); left: 50%; transform: translate(-50%, -50%); z-index: 2;" autoplay muted disablePictureInPicture>
                 <source src="assets/Animation transparent.webm" type="video/webm">
             </video>
         </div>
         <div id="overlay" ></div>
         <script>
             const video = document.getElementById('animated-video');
-            const delay = 2000; 
+            const delay = 2000;
             video.addEventListener('loadedmetadata', () => {
                 setTimeout(() => {
                     video.pause();
                     setTimeout(() => {
                         video.play();
-                    }, 2000); 
+                    }, 2000);
                 }, delay);
             });
-        
+    
             document.getElementById('animated-video').addEventListener('contextmenu', function(e) {
                 e.preventDefault();
             });
-        
+    
+            // Function to get scrollbar width
+            function getScrollbarWidth() {
+                return window.innerWidth - document.documentElement.clientWidth;
+            }
+    
             // Remove overlay after slideIn animation
             const overlay = document.getElementById('overlay');
+            const scrollbarWidth = getScrollbarWidth();
             document.body.classList.add('no-overflow');
+            document.body.style.paddingRight = `${scrollbarWidth}px`;
+    
             video.addEventListener('animationend', (event) => {
                 if (event.animationName === 'slideIn') {
                     overlay.classList.add('fade-out');
                     setTimeout(() => {
                         overlay.remove();
                         document.body.classList.remove('no-overflow');
+                        document.body.style.paddingRight = '';
                     }, 1000); // Match this duration with the CSS transition duration
                 }
             });
