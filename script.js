@@ -60,6 +60,10 @@ document.addEventListener('DOMContentLoaded', function() {
     setTimeout(() => {
         content.style.transition = 'opacity 2s ease-out';
         content.style.opacity = '1';
+        const connectWithMe = document.querySelector('.connect-with-me');
+        connectWithMe.style.transition = 'opacity 2s ease-out, visibility 2s ease-out';
+        connectWithMe.style.opacity = '1';
+        connectWithMe.style.visibility = 'visible';
     }, 3000); // 3 seconds delay
 
     setTimeout(() => {
