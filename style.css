@@ -208,11 +208,6 @@ video {
 }
 
 /* Animation Styles */
-.content {
-    opacity: 0;
-    animation: fadeIn 2s ease-out forwards 3s;
-}
-
 @keyframes fadeIn {
     to {
         opacity: 1;

@@ -1,6 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Check if the animation has already been played
-    if (!sessionStorage.getItem('animationPlayed')) {
+    const backClicked = sessionStorage.getItem('click-back');
+
+    // Hide the video if back was clicked
+    if (!backClicked) {
+        // If back was NOT clicked, play video and add delay
         document.getElementById('animated-video').addEventListener('contextmenu', function(e) {
             e.preventDefault();
         });
@@ -16,26 +19,36 @@ document.addEventListener('DOMContentLoaded', function() {
             inner.style.width = '100%';
             const scrollbarWidth = container.offsetWidth - inner.offsetWidth;
             document.body.removeChild(container);
-
             return scrollbarWidth;
         }
 
+        const content = document.querySelector('.content');
+        content.style.opacity = '0';
+        
+        setTimeout(() => {
+            content.style.transition = 'opacity 2s ease-out';
+            content.style.opacity = '1';
+        }, 3000); // 3 seconds delay
+
         setTimeout(() => {
             document.getElementById('animated-video').remove();
-        }, 3000); 
+        }, 3000);
 
-        const overlays = document.querySelectorAll('#overlay, #overlay2');
         const scrollbarWidth = getScrollbarWidth();
         document.body.classList.add('no-overflow');
         document.body.style.paddingRight = `${scrollbarWidth}px`;
 
         setTimeout(() => {
-            overlays.forEach(overlay => overlay.remove());
             document.body.classList.remove('no-overflow');
             document.body.style.paddingRight = '';
         }, 3000);
-
-        // Set the flag in session storage
-        sessionStorage.setItem('animationPlayed', 'true');
+    } else {
+        // If back was clicked, remove video immediately
+        const video = document.getElementById('animated-video');
+        if (video) {
+            video.remove();
+        }
+        // Clear session storage for future fresh loads
+        sessionStorage.removeItem('click-back');
     }
 });
