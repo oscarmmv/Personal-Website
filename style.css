@@ -1,106 +1,36 @@
-.swup-transition-overlay {
-    background-color: #f5f5f5;
-    transition: background-color 0.25s;
+/* Define CSS Variables for Light and Dark Mode */
+:root {
+    --light-bg-color: #FAFAFA;
+    --light-text-color: #000;
+    --light-quote-bg-color: rgba(82, 134, 223, 0.15);
+    --light-quote-border-color: #5286df;
+    --light-scrollbar-track-color: #eeeeee;
+    --light-scrollbar-thumb-color: #cccccc;
+    --light-overlay-color: #f5f5f5;
+
+    --dark-bg-color: #0e1111;
+    --dark-text-color: #fff;
+    --dark-quote-bg-color: rgba(82, 134, 223, 0.15);
+    --dark-quote-border-color: #5286df;
+    --dark-scrollbar-track-color: #0e1111;
+    --dark-scrollbar-thumb-color: #121617;
+    --dark-overlay-color: #121617;
 }
 
-#overlay {
-    position: absolute; 
-    width: 50%; height: 50%; 
-    background-color: red; 
-    z-index: 1;
-}
-
-#blur-overlay {
-    position: absolute; 
-    width: 100%; height: 100%; 
-    inset: 0; 
-    z-index: 1;
-    backdrop-filter: blur(10px);
-}
-
-.content {
-    opacity: 0;
-    animation: fadeIn 2s ease-out forwards 3s;
-}
-
-@keyframes fadeIn {
-    to {
-        opacity: 1;
-    }
-}
-
-.fade-out {
-    opacity: 0;
-    transition: opacity 0.3s ease-out;
-}
-  
-#wrapper {
-    margin: auto;
-    width: 600px;
-}
-
-#resume-wrapper {
-    margin: auto;
-    width: 600px;
-    background-color: red;
-    height: 100vh;
-}
-
-#pdf-embed {
-    width: 100%;
-    height: 102.35%;
-}
-
-@font-face {
-    font-family: 'Mofugu';
-    src: url('fonts/Mofugu.otf') format('opentype');
-}
-
+/* General Styles */
 body {
     margin-top: 55px;
     font-family: "Oxygen", sans-serif;
     line-height: 1.5; 
     letter-spacing: 0.15px; 
-    background-color: #FAFAFA;
+    background-color: var(--light-bg-color);
+    color: var(--light-text-color);
 }
 
-.quote {
-    border-left: 4px solid #5286df;
-    padding-left: 10px;
-    margin-left: 0;
-    background-color: rgba(82, 134, 223, 0.15);
+h1, h2, h3 {
+    display: inline;
+    margin-left: -35px;
 }
-
-
-video {
-    filter: brightness(0) invert(0) blur(0.7px);
-    opacity: 0.8;
-    image-rendering: -webkit-optimize-contrast;
-    image-rendering: crisp-edges;
-    animation: slideIn 0.54s ease-in forwards 2.5s, slideIn2 0.36s ease-in forwards 4s;
-}
-
-.fade-out {
-    transition: opacity 1s ease-out;
-    opacity: 0;
-}
-
-.no-overflow {
-    overflow: hidden;
-}
-
-a:visited,#mail, a {
-    color: #5286df;
-}
-
-hr {
-    height: 1px; 
-    background-color: #eeeeee; 
-    border: none; 
-
-}
-
-
 
 h1 {
     font-size: 36px;
@@ -112,20 +42,70 @@ h2 {
 
 h3 {
     font-size: 16px;
-    display: inline-block;
     margin-bottom: 0;
 }
 
-p,li{
-    margin-bottom: 10px;
+h1::before, h2::before, h3::before {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    margin-right: 5px; /* Optional: Adds space between # and the heading text */
+    content: attr(data-content);
 }
 
+h1::before {
+    content: "# ";
+}
 
+h2::before {
+    content: "## ";
+}
+
+h3::before {
+    content: "### ";
+}
+
+h1:hover::before, h2:hover::before, h3:hover::before {
+    opacity: 0.2;
+}
+
+p, li {
+    margin-bottom: 10px;
+}
 
 li::marker {
     color: rgba(0, 0, 0, 0.6);
 }
 
+#source {
+    display: block;
+}
+
+a:visited, #mail, a {
+    color: #5286df;
+}
+
+a:not(#back)::before {  
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background: hsl(200 100% 80%);
+    z-index: -1;
+    transform: scaleX(0) skewX(5deg);
+    transform-origin: bottom right;
+    transition: transform .3s ease;
+}
+
+a:not(#back):hover::before {
+    transform: scaleX(1) skewX(5deg);
+    transform-origin: bottom left;
+}
+
+a:not(#back) {
+    position: relative;
+    width: min-content;
+    white-space: nowrap;
+}
 
 #back {
     color: #636b7987;
@@ -133,19 +113,10 @@ li::marker {
     text-decoration: none;
 }
 
-footer {
-    height: 10vh;
-}
-
-#sub-head {
-    font-size: 12px;
-    color: #636b79;
-}
-
-#time{
-    display: inline-block;
-    padding-left: 5px;
-    font-size: 10px;
+hr {
+    height: 1px; 
+    background-color: var(--light-scrollbar-track-color); 
+    border: none; 
 }
 
 img {
@@ -178,6 +149,98 @@ img {
     padding: 5px;
 }
 
+footer {
+    height: 10vh;
+}
+
+#sub-head {
+    font-size: 12px;
+    color: #636b79;
+}
+
+#time {
+    display: inline-block;
+    padding-left: 5px;
+    font-size: 10px;
+}
+
+.quote {
+    border-left: 4px solid var(--light-quote-border-color);
+    padding-left: 10px;
+    margin-left: 0;
+    background-color: var(--light-quote-bg-color);
+}
+
+video {
+    filter: brightness(0) invert(0) blur(0.7px);
+    opacity: 0.8;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    animation: slideIn 0.54s ease-in forwards 2.5s, slideIn2 0.36s ease-in forwards 4s;
+}
+
+.fade-out {
+    transition: opacity 1s ease-out;
+    opacity: 0;
+}
+
+.no-overflow {
+    overflow: hidden;
+}
+
+/* Wrapper Styles */
+#wrapper {
+    margin: auto;
+    width: 600px;
+    position: relative;
+}
+
+#resume-wrapper {
+    margin: auto;
+    width: 600px;
+    background-color: red;
+    height: 100vh;
+}
+
+#pdf-embed {
+    width: 100%;
+    height: 102.35%;
+}
+
+/* Animation Styles */
+.content {
+    opacity: 0;
+    animation: fadeIn 2s ease-out forwards 3s;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Overlay Styles */
+.swup-transition-overlay {
+    background-color: var(--light-overlay-color);
+    transition: background-color 0.25s;
+}
+
+#overlay {
+    position: absolute; 
+    width: 50%; height: 50%; 
+    background-color: red; 
+    z-index: 1;
+}
+
+#blur-overlay {
+    position: absolute; 
+    width: 100%; height: 100%; 
+    inset: 0; 
+    z-index: 1;
+    backdrop-filter: blur(10px);
+}
+
+/* Devlog Styles */
 .devlog {
     background-color: #ffffff80;
     list-style-type: none;
@@ -185,7 +248,12 @@ img {
     border-radius: 20px;
 }
 
+/* Scrollbar Styles */
+::-webkit-scrollbar {
+    width: 12px;
+}
 
+/* Media Queries */
 @media (max-width: 600px) {
     #wrapper {
         margin: auto;
@@ -264,55 +332,23 @@ img {
     footer {
         height: 0;
     }
-    
 }
 
-a:not(#back)::before {  
-    content: " ";
-    display: block;
-    position: absolute;
-    top: 0; right: 0; bottom: 0; left: 0;
-    background: hsl(200 100% 80%);
-    z-index: -1;
-    transform: scaleX(0) skewX(5deg);
-    transform-origin: bottom right;
-    transition: transform .3s ease;
-}
-
-a:not(#back):hover::before {
-    transform: scaleX(1) skewX(5deg);
-    transform-origin: bottom left;
-}
-
-a:not(#back) {
-    position: relative;
-    width: min-content;
-    white-space: nowrap;
-}
-  
-
-
-::-webkit-scrollbar {
-    width: 12px;
-}
-
-
+/* Dark Mode Styles */
 @media (prefers-color-scheme: dark) {
     body {
-        background-color: #0e1111;
-        color: #fff;
+        background-color: var(--dark-bg-color);
+        color: var(--dark-text-color);
     }
 
-    
-
     ::-webkit-scrollbar-track {
-        background: #0e1111;
+        background: var(--dark-scrollbar-track-color);
     }
 
     ::-webkit-scrollbar-thumb {
-        background-color: #121617;
+        background-color: var(--dark-scrollbar-thumb-color);
         border-radius: 10px;
-        border: 3px solid #0e1111;
+        border: 3px solid var(--dark-scrollbar-track-color);
     }
 
     video {
@@ -320,8 +356,8 @@ a:not(#back) {
         opacity: 1;
     }
 
-    h1, h2, h3, p, li, #back,#time {
-        color: #fff;
+    h1, h2, h3, p, li, #back, #time {
+        color: var(--dark-text-color);
     }
     
     li::marker {
@@ -332,19 +368,15 @@ a:not(#back) {
     }
     hr {
         height: 1px; 
-        background-color: #121617; 
+        background-color: var(--dark-scrollbar-thumb-color); 
         border: none; 
     }
 
     .swup-transition-overlay {
-        background-color: #121617;
+        background-color: var(--dark-overlay-color);
     }
 
     .devlog {
         background-color: #131616;
-
     }
-
 }
-
-
