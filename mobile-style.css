@@ -80,22 +80,22 @@ a:visited, #mail, a {
 .gradient {
     position: relative;
     display: inline-block;
-    background: linear-gradient(45deg, #00c6ff, #0072ff);
+    background: linear-gradient(45deg, #00c6ff, #5286df, #146ebd);
     background-size: 200% 200%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: gradientAnimation 2s ease infinite;
+    animation: gradientAnimation 4s ease infinite;
     font-weight: bold;
 }
 
 .gradient-null {
     position: relative;
     display: inline-block;
-    background: linear-gradient(45deg, #00c6ff, #0072ff);
+    background: linear-gradient(45deg, #00c6ff, #5286df, #146ebd);
     background-size: 200% 200%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: gradientAnimation 2s ease infinite;
+    animation: gradientAnimation 4s ease infinite;
     font-weight: bold;
 }
 
@@ -106,9 +106,13 @@ a.gradient::after {
     bottom: 4px;
     width: 100%;
     height: 1px;
-    background: linear-gradient(45deg, #00c6ff, #0072ff);
+    background: linear-gradient(45deg, #00c6ff, #5286df, #146ebd);
     background-size: 200% 200%;
-    animation: gradientAnimation 2s ease infinite;
+    animation: gradientAnimation 4s ease infinite;
+}
+
+a.sublink {
+    font-weight: normal;
 }
 
 .gradient a {
@@ -117,13 +121,13 @@ a.gradient::after {
 
 @keyframes gradientAnimation {
     0% {
-        background-position: 0% 0%;
+        background-position: 0% 50%;
     }
     50% {
-        background-position: 100% 100%;
+        background-position: 100% 50%;
     }
     100% {
-        background-position: 0% 0%;
+        background-position: 0% 50%;
     }
 }
 
