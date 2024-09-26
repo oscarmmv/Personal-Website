@@ -138,6 +138,12 @@ h1 {
     margin-left: auto;
 }
 
+/* Overlay Styles */
+.swup-transition-overlay {
+    background-color: var(--light-overlay-color);
+    transition: background-color 0.25s;
+}
+
 @keyframes gradientAnimation {
     0% {
         background-position: 0% 50%;
@@ -201,5 +207,9 @@ h1 {
 
     .devlog {
         background-color: #131616;
+    }
+
+    .swup-transition-overlay {
+        background-color: var(--dark-overlay-color);
     }
 }
