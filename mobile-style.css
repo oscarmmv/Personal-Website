@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* Define CSS Variables for Light and Dark Mode */
+:root {
+    --light-bg-color: #FAFAFA;
+    --light-text-color: #000;
+    --light-quote-bg-color: rgba(82, 134, 223, 0.15);
+    --light-quote-border-color: #5286df;
+    --light-scrollbar-track-color: #eeeeee;
+    --light-scrollbar-thumb-color: #cccccc;
+    --light-overlay-color: #f5f5f5;
+
+    --dark-bg-color: #0e1111;
+    --dark-text-color: #fff;
+    --dark-quote-bg-color: rgba(82, 134, 223, 0.15);
+    --dark-quote-border-color: #5286df;
+    --dark-scrollbar-track-color: #0e1111;
+    --dark-scrollbar-thumb-color: #121617;
+    --dark-overlay-color: #121617;
+}
+
+body {
+    margin-top: 55px;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.5; 
+    letter-spacing: 0.15px; 
+}
+
+h1 {
+    font-size: 10vw;
+    text-align: center;
+}
+
+#wrapper {
+    width: 90%;
+    margin: auto;
+}
+
+#cursor {
+    display: inline-block;
+    width: 10px;
+    animation: blink 1s step-end infinite;
+    color: var(--dark-quote-border-color);
+}
+
+li {
+    list-style: none;
+    margin-left: 0;
+}
+.quote {
+    border-left: 4px solid var(--light-quote-border-color);
+    padding-left: 10px;
+    margin-left: 0;
+    margin-top: 0;
+    background-color: var(--light-quote-bg-color);
+    border-radius: 5px;
+    padding: 8px;
+}
+
+a:visited, #mail, a {
+    color: #5286df;
+}
+
+.connect-with-me {
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.connect-button {
+    background-color: var(--light-scrollbar-track-color);
+    color: var(--light-text-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: var(--dark-bg-color);
+        color: var(--dark-text-color);
+    }
+
+    ::-webkit-scrollbar-track {
+        background: var(--dark-scrollbar-track-color);
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: var(--dark-scrollbar-thumb-color);
+        border-radius: 10px;
+        border: 3px solid var(--dark-scrollbar-track-color);
+    }
+
+    video {
+        filter: brightness(0) invert(1) blur(0.7px);
+        opacity: 1;
+    }
+
+    h1, h2, h3, p, li, #back, #time {
+        color: var(--dark-text-color);
+    }
+    
+    li::marker {
+        color: rgba(255, 255, 255, 0.6);
+    }
+    #sub-head {
+        color: #9d9696;
+    }
+    hr {
+        height: 1px; 
+        background-color: var(--dark-scrollbar-thumb-color); 
+        border: none; 
+    }
+
+    .connect-button {
+        background-color: var(--dark-scrollbar-thumb-color); 
+        color: var(--dark-text-color);
+    }
+    .swup-transition-overlay {
+        background-color: var(--dark-overlay-color);
+    }
+
+    .devlog {
+        background-color: #131616;
+    }
+}
