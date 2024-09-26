@@ -203,7 +203,8 @@ a:not(#back):not(#connect):hover::before {
 }
 
 hr {
-    height: 1px; 
+    margin-top: 15px;
+    height: 1px;
     background-color: var(--light-scrollbar-track-color); 
     border: none; 
 }
@@ -485,9 +486,7 @@ video {
         color: #9d9696;
     }
     hr {
-        height: 1px; 
         background-color: var(--dark-scrollbar-thumb-color); 
-        border: none; 
     }
 
     .connect-button {
