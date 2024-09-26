@@ -62,11 +62,9 @@ a:visited, #mail, a {
 }
 
 .connect-with-me {
-    bottom: 20px;
-    right: 20px;
     display: flex;
-    flex-direction: row;
-    gap: 10px;
+    gap: 10%;
+    justify-content: center;
 }
 
 .connect-button {
