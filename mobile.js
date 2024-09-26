@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 <span id="text" class="title" >oscar saul.</span><span id="cursor">|</span>
                 </h1>  
                 <div id="wrapper">
-                <div class="quote" itemprop="description" style="top: -300px;">Hey 👋, I'm a Computer Science and Business student focused on developing full-stack web applications and backend services. I have a strong interest in cybersecurity, fintech, and 3D modeling. Currently, I’m exploring the applications of Nmap's, modeling in Fusion 360, and automating  <a href="arbitrage-trader">arbitrage opportunities</a> through web scraping. Want to learn more <a href="about-me">about me?</a> 👈😎</div>
+                <div class="quote" itemprop="description" style="top: -300px;">Hey 👋, I'm a Computer Science and Business student focused on developing full-stack web applications and backend services. I have a strong interest in cybersecurity, fintech, and 3D modeling. Currently, I’m exploring the applications of Nmap's, modeling in Fusion 360, and automating <a class="gradient sublink" href="arbitrage-trader">arbitrage opportunities</a> through web scraping. Want to learn more <a style="text-decoration: underline;"class="gradient sublink" href="about-me">about me?</a> 👈😎</div>
                 <br>
                 <h2>Projects</h2>
                 <section>
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     <a id="connect" href="https://github.com/oscarmmv" target="_blank">
                     <button class="connect-button"><i class="bi bi-github"></i></button>
                     </a>
-                    <a id="connect" href="discord.com/users/748901094650019971" target="_blank">
+                    <a id="connect" href="https://discord.com/users/748901094650019971" target="_blank">
                     <button class="connect-button"><i class="bi bi-discord"></i></button>
                     </a>
                 </div>
