@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="mobile-style.css">
         <meta name="description" content="Oscar Saul - Computer Science and Business student specializing in full-stack web development and cybersecurity.">
         <meta name="og:email" content="oscarsaul.mmv@gmail.com"/>
         <meta name="og:phone_number" content="437-219-3454"/>
@@ -26,5 +27,13 @@
         </div>
     </div>
     <script src="https://unpkg.com/swup@2.1.0/dist/swup.min.js"></script>
+    <script>
+        if (window.matchMedia("(pointer: none), (pointer: coarse)").matches) {
+            var link = document.createElement('link');
+            link.rel = 'stylesheet';
+            link.href = 'mobile-style.css';
+            document.head.appendChild(link);
+        }
+    </script>
 </body>
 </html>

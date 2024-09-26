@@ -325,12 +325,9 @@ video {
 }
 
 .connect-button:nth-child(2) {
-    background-color: #333; /* GitHub black */
-}
+    background-color: #333; 
 
-.connect-button:nth-child(2):hover {
-    background-color: #000; /* Darker GitHub black */
-}
+
 
 /* Animation Styles */
 @keyframes fadeIn {

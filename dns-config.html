@@ -26,5 +26,13 @@
         </div>
     </div>
     <script src="https://unpkg.com/swup@2.1.0/dist/swup.min.js"></script>
+    <script>
+        if (window.matchMedia("(pointer: none), (pointer: coarse)").matches) {
+            var link = document.createElement('link');
+            link.rel = 'stylesheet';
+            link.href = 'mobile-style.css';
+            document.head.appendChild(link);
+        }
+    </script>
 </body>
 </html>

@@ -20,10 +20,12 @@
 }
 
 body {
-    margin-top: 55px;
-    font-family: 'Inter', sans-serif;
-    line-height: 1.5; 
-    letter-spacing: 0.15px; 
+    margin-top: 100px !important;
+    background-color: var(--light-bg-color) !important;
+}
+
+* {
+    color: var(--light-text-color) !important;
 }
 
 h1 {
@@ -119,6 +121,18 @@ a.sublink {
     text-decoration: underline; 
 }
 
+#source {
+    font-size: 5vw;
+}
+
+h1::before,h2::before,h3::before {
+    content: none;
+}
+
+h1 {
+    margin-left: auto;
+}
+
 @keyframes gradientAnimation {
     0% {
         background-position: 0% 50%;
@@ -133,8 +147,12 @@ a.sublink {
 
 @media (prefers-color-scheme: dark) {
     body {
-        background-color: var(--dark-bg-color);
-        color: var(--dark-text-color);
+        margin-top: 100px !important;
+        background-color: var(--dark-bg-color) !important;
+    }
+    
+    * {
+        color: var(--dark-text-color) !important;
     }
 
     ::-webkit-scrollbar-track {

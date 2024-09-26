@@ -101,4 +101,13 @@ document.addEventListener('DOMContentLoaded', function() {
     setTimeout(() => {
         type();
     }, 3000); // Start typing after 3 seconds
+
+    document.querySelectorAll('button').forEach(button => {
+        button.addEventListener('mouseover', function() {
+            this.querySelector('i').classList.add('gradient');
+        });
+        button.addEventListener('mouseout', function() {
+            this.querySelector('i').classList.remove('gradient');
+        });
+    });
 });

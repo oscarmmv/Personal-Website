@@ -27,5 +27,14 @@
             <div>I was inspired by the <a href="https://github.com/sherlock-project/sherlock">sherlock project</a> to create a tool to retrieve metrics from a users social media account. This project scrapes user information such as followers, following, likes, posts, bio, location, and age, without the use of API. Social crawler utilizes Selenium, Helium, and HTTP GET requests to retrieve user information from Facebook, Instagram, TikTok, and Twitter.</div>
         </div>
     </div>
+    <script src="https://unpkg.com/swup@2.1.0/dist/swup.min.js"></script>
+    <script>
+        if (window.matchMedia("(pointer: none), (pointer: coarse)").matches) {
+            var link = document.createElement('link');
+            link.rel = 'stylesheet';
+            link.href = 'mobile-style.css';
+            document.head.appendChild(link);
+        }
+    </script>
 </body>
 </html>
