@@ -106,27 +106,27 @@ a:visited, #mail, a {
     color: #5286df;
 }
 
+a:not(#back):not(#connect) {
+    position: relative;
+    width: min-content;
+    white-space: nowrap;
+}
+
 a:not(#back):not(#connect)::before {  
     content: " ";
     display: block;
     position: absolute;
     top: 0; right: 0; bottom: 0; left: 0;
-    background: hsl(200 100% 80%);
+    background: hsl(200, 100%, 80%);
     z-index: -1;
-    transform: scaleX(0) skewX(5deg);
+    transform: scaleX(0);
     transform-origin: bottom right;
-    transition: transform .3s ease;
+    transition: transform 0.3s ease;
 }
 
-a:not(#back):hover::before {
-    transform: scaleX(1) skewX(5deg);
+a:not(#back):not(#connect):hover::before {
+    transform: scaleX(1);
     transform-origin: bottom left;
-}
-
-a:not(#back) {
-    position: relative;
-    width: min-content;
-    white-space: nowrap;
 }
 
 #back {
