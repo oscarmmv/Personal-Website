@@ -8,9 +8,6 @@ document.addEventListener("DOMContentLoaded", function() {
                     <title>Mobile Version</title>
                     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
                     <link rel="stylesheet" href="mobile-style.css">
-                    <style>
-                    
-                    </style>
                 </head>
                 <body>
                     <h1 itemprop="name">
@@ -18,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     </h1>  
                     <div id="wrapper">
                         <div class="quote" itemprop="description" style="top: -300px;">Hey 👋, I'm a Computer Science and Business student focused on developing full-stack web applications and backend services. I have a strong interest in cybersecurity, fintech, and 3D modeling. Currently, I’m exploring the applications of Nmap's, modeling in Fusion 360, and automating  <a href="arbitrage-trader">arbitrage opportunities</a> through web scraping. Want to learn more <a href="about-me">about me?</a> 👈😎</div>
-                        <br>>
+                        <br>
                         <h2>Projects</h2>
                         <section>
                             <p itemprop="projects"><a href="arbitrage-trader">Arbitrage Trader</a> - a program that calculates profit opportunities across multiple sportsbooks</p>

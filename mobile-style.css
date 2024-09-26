@@ -22,6 +22,7 @@
 body {
     margin-top: 100px !important;
     background-color: var(--light-bg-color) !important;
+    font-family: Inter, sans-serif;
 }
 
 * {
