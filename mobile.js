@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
         document.documentElement.innerHTML = `
             <html>
                 <head>
-                    <title>Mobile Version</title>
+                    <title>Portfolio</title>
                     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
                     <link rel="stylesheet" href="mobile-style.css">
                 </head>

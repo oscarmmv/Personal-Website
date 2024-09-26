@@ -27,5 +27,14 @@
             <div>The Playlist Generator utilizes open ai's engine Davinci-003 to generate a prompt using natural language for Open AI image generator DALL-E. Using the prompt from Davinci-003, the web app generates a unique playlist cover that reflects the music.</div>
         </div>
     </div>
+    <script src="https://unpkg.com/swup@2.1.0/dist/swup.min.js"></script>
+    <script>
+        if (window.matchMedia("(pointer: none), (pointer: coarse)").matches) {
+            var link = document.createElement('link');
+            link.rel = 'stylesheet';
+            link.href = 'mobile-style.css';
+            document.head.appendChild(link);
+        }
+    </script>
 </body>
 </html>

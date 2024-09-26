@@ -29,6 +29,10 @@ body {
     color: var(--light-text-color) !important;
 }
 
+a:visited, #mail, a {
+    color: #5286df;
+}
+
 h1 {
     font-size: 10vw;
     text-align: center;
