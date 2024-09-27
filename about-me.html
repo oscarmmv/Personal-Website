@@ -30,7 +30,7 @@
             <div>When I'm not immersing myself in lectures or tutorials, I enjoy picking up various skills and hobbies.</div>
             <br>
             <div>Here's what I'm doing <a href="now">now</a>.</div><br>
-            <h2>Contact</h2>
+            <h2 class="contact">Contact</h2>
             <ul>
                 <li style="list-style-type: none; margin-left: -20px;"><i class="bi bi-envelope"></i> <a id="mail" href="mailto:oscarsaul.mmv@gmail,com">Email</a></li>
                 <li style="list-style-type: none; margin-left: -20px;"><i class="bi bi-linkedin"></i> <a href="https://www.linkedin.com/in/oscarmmv/">Linkedin</a></li>
@@ -39,4 +39,12 @@
             </ul>
         </div>
     </div>
+    <script>
+        if (window.matchMedia("(pointer: none), (pointer: coarse)").matches) {
+            var link = document.createElement('link');
+            link.rel = 'stylesheet';
+            link.href = 'mobile-style.css';
+            document.head.appendChild(link);
+        }
+    </script>
 </body>
