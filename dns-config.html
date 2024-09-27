@@ -33,16 +33,6 @@
             link.href = 'mobile-style.css';
             document.head.appendChild(link);
         }
-
-        // Function to encode image URLs using Base64
-        function encodeImageUrl(url) {
-            return `https://oscarsaul.ca/image/${btoa(url)}`;
-        }
-
-        // Encode all image URLs
-        document.querySelectorAll('img').forEach(img => {
-            img.src = encodeImageUrl(img.src);
-        });
     </script>
 </body>
 </html>
