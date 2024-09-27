@@ -16,9 +16,11 @@
     <script src="https://unpkg.com/@swup/overlay-theme@2"></script>
     <link rel="stylesheet" href="https://unpkg.com/@swup/overlay-theme/dist/OverlayTheme.css">
     <script>
-        const swup = new Swup({
-            plugins: [new SwupOverlayTheme()]
-        });
+        if (!window.matchMedia("(pointer: none), (pointer: coarse)").matches) {
+            const swup = new Swup({
+                plugins: [new SwupOverlayTheme()]
+            });
+        }
     </script>
     <div id="swup">
         <div id="wrapper">
