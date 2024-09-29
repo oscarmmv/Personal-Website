@@ -78,21 +78,19 @@ li {
     margin-left: 0;
 }
 
-#footer {
-    margin-top: 50px;
-    text-align: center;
-}
+
 #tags {
+    margin-top: 80px;
     list-style-type: none;
     padding: 0;
 }
 #tags li {
     display: inline-flex;
     margin-right: 10px; 
-    font-size: 24px;
+    font-size: 44px !important;
     width: auto; 
     background-color: var(--dark-scrollbar-thumb-color);
-    color: var(--light-quote-border-color);
+    color: var(--light-quote-border-color) !important;
     border-radius: 5px; /* Makes the border round */
     padding: 5px 10px; /* Adds padding inside the border */
 }
