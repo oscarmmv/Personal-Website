@@ -5,9 +5,10 @@ document.addEventListener("DOMContentLoaded", function() {
         document.documentElement.innerHTML = `
             <html>
             <head>
-                <title>Portfolio</title>
+                <title>oscarsaul</title>
                 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
                 <link rel="stylesheet" href="mobile-style.css">
+                <link rel="icon" href="assets/logo.png">
             </head>
             <body>
                 <h1 itemprop="name">
