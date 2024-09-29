@@ -138,6 +138,11 @@ a.gradient::after {
     animation: gradientAnimation 4s ease infinite;
 }
 
+#back {
+    color: var(--light-bg-color) !important;
+    font-size: 40px !important;
+}
+
 a.sublink {
     font-weight: normal;
 }
