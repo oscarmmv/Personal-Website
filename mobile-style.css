@@ -130,7 +130,7 @@ a.gradient::after {
     content: '';
     position: absolute;
     left: 0;
-    bottom: 4px;
+    bottom: 0px;
     width: 100%;
     height: 1px;
     background: linear-gradient(45deg, #00c6ff, #5286df, #146ebd);
