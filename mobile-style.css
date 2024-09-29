@@ -139,7 +139,7 @@ a.gradient::after {
 }
 
 #back {
-    color: var(--light-bg-color) !important;
+    color: var(--light-text-color) !important;
     font-size: 40px !important;
 }
 
