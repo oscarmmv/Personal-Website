@@ -89,7 +89,7 @@ li {
     margin-right: 10px; 
     font-size: 44px !important;
     width: auto; 
-    background-color: var(--dark-scrollbar-thumb-color);
+    background-color: var(--light-scrollbar-thumb-color);
     color: var(--light-quote-border-color) !important;
     border-radius: 5px; /* Makes the border round */
     padding: 5px 10px; /* Adds padding inside the border */
@@ -207,7 +207,12 @@ h1 {
     * {
         color: var(--dark-text-color) !important;
     }
-
+    
+    #tags li {
+        background-color: var(--dark-scrollbar-thumb-color);
+        color: var(--light-quote-border-color) !important;
+    }
+    
     ::-webkit-scrollbar-track {
         background: var(--dark-scrollbar-track-color);
     }
