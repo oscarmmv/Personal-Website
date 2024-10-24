@@ -35,13 +35,13 @@
       gesture-detector      
     >
       <a-assets>
-        <img id="resume-image" src="assets/OscarSaulResume.png">
+        <!-- <img id="resume-image" src="assets/OscarSaulResume.png">
         <a-asset-item id="shrek-model" src="assets/Shrek Dancing model/scene.gltf"></a-asset-item>
         <img id="shrek-shirt-texture" src="assets/Shrek Dancing model/textures/shrekshirt_S_baseColor.jpeg">
         <img id="shrek-base-texture" src="assets/Shrek Dancing model/textures/Shrek_baseColor.jpeg">
         <a-asset-item id="squidward-model" src="assets/Handsome Squidward/scene.gltf"></a-asset-item>
         <img id="squidward-eye-texture" src="assets/Handsome Squidward/textures/eyemat_baseColor.jpeg">
-        <img id="squidward-base-texture" src="assets/Handsome Squidward/textures/squidmat_baseColor.jpeg">
+        <img id="squidward-base-texture" src="assets/Handsome Squidward/textures/squidmat_baseColor.jpeg"> -->
       </a-assets>
 
       <a-marker
@@ -53,7 +53,7 @@
         emitevents="true"
         cursor="fuse: false; rayOrigin: mouse;"
       >
-        <a-plane
+        <!-- <a-plane
           scale="7 9.898 0"
           rotation="-90 0 0"
           src="#resume-image"
@@ -80,7 +80,12 @@
             animation-mixer
             animation="property: rotation; to: 360 720 360; loop: true; dur: 5000; easing: linear"
           ></a-entity>
-        </a-entity>
+        </a-entity> -->
+
+        <a-box position="-1 0.5 0" rotation="0 45 0" color="#4CC3D9" class="clickable" onclick="window.open('https://yourwebsite.com', '_blank')"></a-box>
+        <a-box position="1 0.5 0" rotation="0 45 0" color="#FF5733" class="clickable" onclick="window.open('https://linkedin.com/in/yourprofile', '_blank')"></a-box>
+        <a-box position="-1 2 0" rotation="0 45 0" color="#33FF57" class="clickable" onclick="window.open('https://github.com/yourprofile', '_blank')"></a-box>
+        <a-box position="1 2 0" rotation="0 45 0" color="#3357FF" class="clickable" onclick="window.open('mailto:youremail@example.com')"></a-box>
       </a-marker>
 
       <a-entity camera></a-entity>
