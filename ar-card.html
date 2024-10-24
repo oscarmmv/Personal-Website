@@ -36,6 +36,9 @@
     >
       <a-assets>
         <img id="resume-image" src="assets/OscarSaulResume.png">
+        <a-asset-item id="shrek-model" src="assets/Shrek Dancing model/scene.gltf"></a-asset-item>
+        <img id="shrek-shirt-texture" src="assets/Shrek Dancing model/textures/shrekshirt_S_baseColor.jpeg">
+        <img id="shrek-base-texture" src="assets/Shrek Dancing model/textures/Shrek_baseColor.jpeg">
       </a-assets>
 
       <a-marker
@@ -54,6 +57,13 @@
           class="clickable"
           gesture-handler
         ></a-plane>
+        <a-entity
+          position="0 0 0"
+          scale="1 1 1"
+          rotation="0 0 0"
+          gltf-model="#shrek-model"
+          animation-mixer
+        ></a-entity>
       </a-marker>
 
       <a-entity camera></a-entity>
