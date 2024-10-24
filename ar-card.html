@@ -6,11 +6,26 @@
     <script src="https://raw.githack.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
     <script src="https://raw.githack.com/AR-js-org/studio-backend/master/src/modules/marker/tools/gesture-detector.js"></script>
     <script src="https://raw.githack.com/AR-js-org/studio-backend/master/src/modules/marker/tools/gesture-handler.js"></script>
+    <style>
+      .fixed-button {
+        position: fixed;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 10px 20px;
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        z-index: 1000;
+      }
+    </style>
   </head>
 
   <body style="margin: 0; overflow: hidden">
+    <button class="fixed-button" onclick="location.href='/'">Home</button>
     <a-scene
-      vr-mode-ui="enabled: false;"
       loading-screen="enabled: false;"
       renderer="logarithmicDepthBuffer: true;"
       arjs="trackingMethod: best; sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;"
@@ -20,7 +35,7 @@
       gesture-detector      
     >
       <a-assets>
-        <a-asset-item id="animated-asset" src="https://cdn.glitch.global/1bc28f8f-8d53-4bed-a675-2db1ca5b2b87/MacbethBalls.glb?v=1705006592251"></a-asset-item>
+        <img id="resume-image" src="assets/OscarSaulResume.png">
       </a-assets>
 
       <a-marker
@@ -32,19 +47,17 @@
         emitevents="true"
         cursor="fuse: false; rayOrigin: mouse;"
       >
-        <a-entity
-          scale="3 3 3"        
-          rotation="0 0 0"
-          animation-mixer="loop: repeat"
-          gltf-model="#animated-asset"
+        <a-plane
+          scale="7 9.898 0"
+          rotation="-90 0 0"
+          src="#resume-image"
           class="clickable"
           gesture-handler
-        ></a-entity>
+        ></a-plane>
       </a-marker>
 
       <a-entity camera></a-entity>
-      <a-light type="directional" light="castShadow:false;" intensity="3" position="2 4 4"></a-light>
-      <a-light type="ambient" intensity="0.5" color="#BBB"></a-light>
+     
     </a-scene>
   </body>
 </html>
