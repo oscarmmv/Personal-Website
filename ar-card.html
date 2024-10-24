@@ -39,6 +39,9 @@
         <a-asset-item id="shrek-model" src="assets/Shrek Dancing model/scene.gltf"></a-asset-item>
         <img id="shrek-shirt-texture" src="assets/Shrek Dancing model/textures/shrekshirt_S_baseColor.jpeg">
         <img id="shrek-base-texture" src="assets/Shrek Dancing model/textures/Shrek_baseColor.jpeg">
+        <a-asset-item id="squidward-model" src="assets/Handsome Squidward/scene.gltf"></a-asset-item>
+        <img id="squidward-eye-texture" src="assets/Handsome Squidward/textures/eyemat_baseColor.jpeg">
+        <img id="squidward-base-texture" src="assets/Handsome Squidward/textures/squidmat_baseColor.jpeg">
       </a-assets>
 
       <a-marker
@@ -64,6 +67,20 @@
           gltf-model="#shrek-model"
           animation-mixer
         ></a-entity>
+        <a-entity
+          id="squidward-orbit"
+          position="0 0 0"
+          animation="property: rotation; to: 0 360 0; loop: true; dur: 10000; easing: linear"
+        >
+          <a-entity
+            position="2 0 0"
+            scale="1 1 1"
+            rotation="0 0 0"
+            gltf-model="#squidward-model"
+            animation-mixer
+            animation="property: rotation; to: 360 720 360; loop: true; dur: 5000; easing: linear"
+          ></a-entity>
+        </a-entity>
       </a-marker>
 
       <a-entity camera></a-entity>

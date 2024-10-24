@@ -1,0 +1,11 @@
+Model Information:
+* title:	Handsome Squidward
+* source:	https://sketchfab.com/3d-models/handsome-squidward-5f1513ff8d8d4ee485cf7c4da6b75cb6
+* author:	Weasel On A Stick (https://sketchfab.com/woas)
+
+Model License:
+* license type:	CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
+* requirements:	Author must be credited. No commercial use.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Handsome Squidward" (https://sketchfab.com/3d-models/handsome-squidward-5f1513ff8d8d4ee485cf7c4da6b75cb6) by Weasel On A Stick (https://sketchfab.com/woas) licensed under CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
