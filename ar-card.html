@@ -53,24 +53,27 @@
         emitevents="true"
         cursor="fuse: false; rayOrigin: mouse;"
       >
-        <a-plane
-          scale="7 9.898 0"
-          rotation="-90 0 0"
-          src="#resume-image"
-          class="clickable"
-          gesture-handler
-        ></a-plane>
-        <a-entity
-          position="0 0 0"
-          scale="1 1 1"
-          rotation="0 0 0"
-          gltf-model="#shrek-model"
-          animation-mixer
-        ></a-entity>
+        <a-entity id="plane-group">
+          <a-plane
+            scale="7 9.898 0"
+            rotation="-90 0 0"
+            src="#resume-image"
+            class="clickable"
+            gesture-handler
+          ></a-plane>
+        </a-entity>
+        <a-entity id="shrek-group">
+          <a-entity
+            position="0 0 0"
+            scale="1 1 1"
+            rotation="0 0 0"
+            gltf-model="#shrek-model"
+            animation-mixer
+          ></a-entity>
+        </a-entity>
         <a-entity
           id="squidward-orbit"
           position="0 0 0"
-          
         >
           <a-entity
             position="2 0 0"
@@ -78,7 +81,6 @@
             rotation="0 0 0"
             gltf-model="#squidward-model"
             animation-mixer
-            
           ></a-entity>
         </a-entity>
       </a-marker>
