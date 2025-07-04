@@ -24,6 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     <p itemprop="projects"><a href="ai-playlist">AI Generated Playlist</a> - a web based application that uses Open Ai api to generate a unique playlist.</p>
                     <p itemprop="projects"><a href="mouse-heatmap">Mouse Heatmap</a> - lightweight application that stores mouse points and provides a playback of heatmap.</p>
                     <p itemprop="projects"><a href="dns-config">DNS Configurator</a> - python script that changes system DNS settings to Cloudflares resolvers.</p>
+                    <p id="projects"><a href="tor-scout">Tor Scout</a> - scrapes onion links on the Tor network, extracting HTML and cached assets for local storage, utilizing Tor proxies to maintain anonymity.</p>
                 </section>
                 <h2>Experience</h2>
                 <section id="project-container">
