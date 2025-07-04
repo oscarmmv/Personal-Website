@@ -348,19 +348,43 @@ video {
 }
 
 .connect-button:hover {
-    width: 125px; /* 100px * 1.25 */
     margin-left: -62.5px; /* -50px * 1.25 */
     text-align: right; /* Align text to the right on hover */
 }
 
+.connect-button.a:hover {
+    width: 160px; /* 100px * 1.25 */
+}
+
+.connect-button.b:hover {
+    width: 157px; /* 100px * 1.25 */
+}
+
+.connect-button.c:hover {
+    width: 120px; /* 100px * 1.25 */
+}
 .status {
     visibility: hidden;
     opacity: 0;
     transition: visibility 0s, opacity 0.5s ease;
+    white-space: nowrap; /* no wrapping */
+    overflow: hidden; /* hide overflow */
+}
+
+.status:hover{
+    position: relative;
+    display: inline-block;
+    background: linear-gradient(45deg, #00c6ff, #5286df, #146ebd);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientAnimation 4s ease infinite;
+    
 }
 
 .connect-button:hover .status {
     visibility: visible;
+    padding-left: 10px;
     opacity: 1;
     transition-delay: 0.5s; /* Delay to match the hover transition */
 }
