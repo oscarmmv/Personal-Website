@@ -88,7 +88,7 @@ li::marker {
     margin-right: 10px; 
     font-size: 12px;
     width: auto; 
-    background-color: var(--dark-scrollbar-thumb-color);
+    background-color: #f1f1f1;
     color: var(--light-quote-border-color);
     border-radius: 5px;
     padding: 5px 10px;
@@ -465,6 +465,10 @@ body.dark ::-webkit-scrollbar-thumb {
 body.dark video {
     filter: brightness(0) invert(1) blur(0.7px);
     opacity: 1;
+}
+
+body.dark #tags li {
+    background-color: var(--dark-scrollbar-thumb-color);
 }
 
 /* Text color */
