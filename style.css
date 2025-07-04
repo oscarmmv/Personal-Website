@@ -425,11 +425,12 @@ video {
   align-items: center;
 }
 
-.bi-moon { color: #f1c40f; }
-.bi-sun { color: #f39c12; }
+.bi-moon { color: #f1c40f; padding-bottom: 4px }
+.bi-brightness-high-fill { color: #f39c12; padding-bottom: 4px }
+
 
 .checkbox-label .ball {
-  background-color: #fff;
+  background-color: #fafafa;
   width: 30px;
   height: 30px;
   position: absolute;
@@ -503,6 +504,11 @@ body.dark .devlog {
     background-color: #131616;
 }
 
+body.dark .checkbox-label .ball {
+    background-color: #131616;
+}
+
+
 /* Remove duplicate gradientAnimation keyframes from anywhere else */
 
 #overlay {
@@ -519,6 +525,7 @@ body.dark .devlog {
     z-index: 1;
     backdrop-filter: blur(10px);
 }
+
 
 /* Fade in animation for connect-with-me container */
 @keyframes fadeIn {
