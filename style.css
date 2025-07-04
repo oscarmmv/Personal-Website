@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 /* Define CSS Variables for Light and Dark Mode */
 :root {
@@ -45,8 +46,6 @@ h2 {
 
 h3 {
     margin-left: -35px;
-}
-h3 {
     font-size: 16px;
     margin-bottom: 0;
 }
@@ -54,21 +53,12 @@ h3 {
 h1::before, h2::before, h3::before {
     opacity: 0;
     transition: opacity 0.3s ease;
-    margin-right: 5px; /* Optional: Adds space between # and the heading text */
-    content: attr(data-content);
+    margin-right: 5px;
 }
 
-h1::before {
-    content: "# ";
-}
-
-h2::before {
-    content: "## ";
-}
-
-h3::before {
-    content: "### ";
-}
+h1::before { content: "# "; }
+h2::before { content: "## "; }
+h3::before { content: "### "; }
 
 h1:hover::before, h2:hover::before, h3:hover::before {
     opacity: 0.2;
@@ -100,22 +90,11 @@ li::marker {
     width: auto; 
     background-color: var(--dark-scrollbar-thumb-color);
     color: var(--light-quote-border-color);
-    border-radius: 5px; /* Makes the border round */
-    padding: 5px 10px; /* Adds padding inside the border */
+    border-radius: 5px;
+    padding: 5px 10px;
 }
 
-.gradient {
-    position: relative;
-    display: inline-block;
-    background: linear-gradient(45deg, #00c6ff, #5286df, #146ebd);
-    background-size: 200% 200%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: gradientAnimation 4s ease infinite;
-    font-weight: bold;
-}
-
-.gradient-null {
+.gradient, .gradient-null {
     position: relative;
     display: inline-block;
     background: linear-gradient(45deg, #00c6ff, #5286df, #146ebd);
@@ -144,44 +123,6 @@ a.sublink {
 
 .gradient a {
     text-decoration: underline; 
-}
-
-@keyframes gradientAnimation {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
-@keyframes gradientAnimation {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
-@keyframes blink {
-  from, to {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-}
-
-#source {
-    display: block;
-    font-size: 24px;
 }
 
 a:visited, #mail, a {
@@ -231,7 +172,7 @@ img {
 #me {
     border-radius: 50%;
     width: 200px;
-    aspect-ratio: 1/1;
+    aspect-ratio: 1 / 1;
 }
 
 #contacts {
@@ -314,18 +255,19 @@ video {
     height: 102.35%;
 }
 
+/* Connect Me Button Container */
 .connect-with-me {
     position: fixed;
-    bottom: 25px; /* 20px * 1.25 */
-    right: 25px; /* 20px * 1.25 */
+    bottom: 25px;
+    right: 25px;
     display: flex;
     flex-direction: column;
-    gap: 12.5px; /* 10px * 1.25 */
+    gap: 12.5px;
     visibility: hidden;
     opacity: 0;
     transition: opacity 2s ease-out, visibility 2s ease-out;
     align-items: flex-end;
-    width: auto; /* Ensure the parent container has a defined width */
+    width: auto;
 }
 
 .connect-button {
@@ -335,43 +277,44 @@ video {
     padding-top: 12.5px;
     padding-bottom: 12.5px;
     padding-right: 22px;
-    border-radius: 6.25px; /* 5px * 1.25 */
+    border-radius: 6.25px;
     cursor: pointer;
-    font-size: 20px; /* 16px * 1.25 */
-    transition: width 1s ease, margin-left 1s ease; /* Transition width and margin-left */
-    text-align: right; /* Align text to the right initially */
-    width: 62.5px; /* 50px * 1.25 */
-    position: relative; /* Make it relative to adjust margin-left property */
-    display: flex; /* Use flexbox to align items */
-    align-items: center; /* Center items vertically */
-    justify-content: space-between; /* Space items evenly */
+    font-size: 20px;
+    transition: width 1s ease, margin-left 1s ease;
+    text-align: right;
+    width: 62.5px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .connect-button:hover {
-    margin-left: -62.5px; /* -50px * 1.25 */
-    text-align: right; /* Align text to the right on hover */
+    margin-left: -62.5px;
+    text-align: right;
 }
 
 .connect-button.a:hover {
-    width: 160px; /* 100px * 1.25 */
+    width: 160px;
 }
 
 .connect-button.b:hover {
-    width: 157px; /* 100px * 1.25 */
+    width: 157px;
 }
 
 .connect-button.c:hover {
-    width: 120px; /* 100px * 1.25 */
+    width: 120px;
 }
+
 .status {
     visibility: hidden;
     opacity: 0;
     transition: visibility 0s, opacity 0.5s ease;
-    white-space: nowrap; /* no wrapping */
-    overflow: hidden; /* hide overflow */
+    white-space: nowrap;
+    overflow: hidden;
 }
 
-.status:hover{
+.status:hover {
     position: relative;
     display: inline-block;
     background: linear-gradient(45deg, #00c6ff, #5286df, #146ebd);
@@ -379,54 +322,58 @@ video {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: gradientAnimation 4s ease infinite;
-    
 }
 
 .connect-button:hover .status {
     visibility: visible;
     padding-left: 10px;
     opacity: 1;
-    transition-delay: 0.5s; /* Delay to match the hover transition */
+    transition-delay: 0.5s;
 }
-
-
 
 .connect-button:nth-child(2) {
-    background-color: #333; 
+    background-color: #333;
 }
-/* Animation Styles */
-@keyframes fadeIn {
-    to {
-        opacity: 1;
-        visibility: visible;
-    }
+
+#source {
+    display: block;
+    font-size: 24px;
+}
+/* Animations */
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes blink {
+  from, to { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* Support me link */
+.support {
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+}
+
+.support a {
+  color: #292c35;
+  font-size: 32px;
+  backface-visibility: hidden;
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.support a:hover {
+  transform: scale(1.1);
 }
 
 /* Overlay Styles */
 .swup-transition-overlay {
     background-color: var(--light-overlay-color);
     transition: background-color 0.25s;
-}
-
-/* Overlay Styles */
-.swup-transition-overlay {
-    background-color: var(--light-overlay-color);
-    transition: background-color 0.25s;
-}
-
-#overlay {
-    position: absolute; 
-    width: 50%; height: 50%; 
-    background-color: red; 
-    z-index: 1;
-}
-
-#blur-overlay {
-    position: absolute; 
-    width: 100%; height: 100%; 
-    inset: 0; 
-    z-index: 1;
-    backdrop-filter: blur(10px);
 }
 
 /* Devlog Styles */
@@ -450,51 +397,133 @@ video {
     }
 }
 
+/* Hidden checkbox for dark mode toggle */
+.checkbox {
+  opacity: 0;
+  left: 100px;
+  position: absolute;
+}
+
+/* Header wrapper flex */
+.header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Checkbox label styles */
+.checkbox-label {
+  background-color: var(--light-quote-bg-color);
+  width: 50px;
+  height: 26px;
+  border-radius: 50px;
+  position: relative;
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bi-moon { color: #f1c40f; }
+.bi-sun { color: #f39c12; }
+
+.checkbox-label .ball {
+  background-color: #fff;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .checkbox-label .ball {
+  transform: translateX(24px);
+}
+
 /* Dark Mode Styles */
-@media (prefers-color-scheme: dark) {
-    body {
-        background-color: var(--dark-bg-color);
-        color: var(--dark-text-color);
-    }
+body.dark {
+    background-color: var(--dark-bg-color);
+    color: var(--dark-text-color);
+}
 
-    ::-webkit-scrollbar-track {
-        background: var(--dark-scrollbar-track-color);
-    }
+/* Scrollbar dark styles */
+body.dark ::-webkit-scrollbar-track {
+    background: var(--dark-scrollbar-track-color);
+}
 
-    ::-webkit-scrollbar-thumb {
-        background-color: var(--dark-scrollbar-thumb-color);
-        border-radius: 10px;
-        border: 3px solid var(--dark-scrollbar-track-color);
-    }
+body.dark ::-webkit-scrollbar-thumb {
+    background-color: var(--dark-scrollbar-thumb-color);
+    border-radius: 10px;
+    border: 3px solid var(--dark-scrollbar-track-color);
+}
 
-    video {
-        filter: brightness(0) invert(1) blur(0.7px);
+/* Video filter */
+body.dark video {
+    filter: brightness(0) invert(1) blur(0.7px);
+    opacity: 1;
+}
+
+/* Text color */
+body.dark h1, 
+body.dark h2, 
+body.dark h3, 
+body.dark p, 
+body.dark li, 
+body.dark #back, 
+body.dark #time {
+    color: var(--dark-text-color);
+}
+
+/* List marker */
+body.dark li::marker {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+body.dark #sub-head {
+    color: #9d9696;
+}
+
+body.dark hr {
+    background-color: var(--dark-scrollbar-thumb-color);
+}
+
+body.dark .connect-button {
+    background-color: var(--dark-scrollbar-thumb-color);
+    color: var(--dark-text-color);
+}
+
+body.dark .swup-transition-overlay {
+    background-color: var(--dark-overlay-color);
+}
+
+body.dark .devlog {
+    background-color: #131616;
+}
+
+/* Remove duplicate gradientAnimation keyframes from anywhere else */
+
+#overlay {
+    position: absolute; 
+    width: 50%; height: 50%; 
+    background-color: red; 
+    z-index: 1;
+}
+
+#blur-overlay {
+    position: absolute; 
+    width: 100%; height: 100%; 
+    inset: 0; 
+    z-index: 1;
+    backdrop-filter: blur(10px);
+}
+
+/* Fade in animation for connect-with-me container */
+@keyframes fadeIn {
+    to {
         opacity: 1;
-    }
-
-    h1, h2, h3, p, li, #back, #time {
-        color: var(--dark-text-color);
-    }
-    
-    li::marker {
-        color: rgba(255, 255, 255, 0.6);
-    }
-    #sub-head {
-        color: #9d9696;
-    }
-    hr {
-        background-color: var(--dark-scrollbar-thumb-color); 
-    }
-
-    .connect-button {
-        background-color: var(--dark-scrollbar-thumb-color); 
-        color: var(--dark-text-color);
-    }
-    .swup-transition-overlay {
-        background-color: var(--dark-overlay-color);
-    }
-
-    .devlog {
-        background-color: #131616;
+        visibility: visible;
     }
 }

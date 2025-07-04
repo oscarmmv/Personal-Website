@@ -111,3 +111,32 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const checkbox = document.getElementById("checkbox");
+    const savedTheme = localStorage.getItem("theme");
+    const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+  
+    if (savedTheme === "dark" || (!savedTheme && prefersDark)) {
+      document.body.classList.add("dark");
+      checkbox.checked = true;
+    } else {
+      document.body.classList.remove("dark");
+      checkbox.checked = false;
+    }
+  
+    checkbox.addEventListener("change", () => {
+      if (checkbox.checked) {
+        document.body.classList.add("dark");
+        localStorage.setItem("theme", "dark");
+      } else {
+        document.body.classList.remove("dark");
+        localStorage.setItem("theme", "light");
+      }
+    });
+  });
+  
+
+
+
