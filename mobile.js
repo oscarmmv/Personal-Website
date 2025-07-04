@@ -28,7 +28,11 @@ document.addEventListener("DOMContentLoaded", function() {
                 <h2>Experience</h2>
                 <section id="project-container">
                     <div>
-                        <h3 itemprop="jobTitle">Makerspace <span id="time">2024</span></h3>
+                        <h3 itemprop="jobTitle">CompTIA Security+ SY0-701</h3><p id="time">2025</p>
+                        <p class="quote">Certified in CompTIA Security+; qualified to identify and manage cybersecurity risks, implement security protocols, and protect networks and systems from threats.</p>
+                    </div>
+                    <div>
+                        <h3 itemprop="jobTitle">Makerspace <span id="time">2024-2025</span></h3>
                         <p class="quote">Engage in creating innovative projects utilizing various technologies, including 3D modeling, printing, and coding.</p>
                     </div>
                     <div>
