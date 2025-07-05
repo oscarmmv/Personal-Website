@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://oscarsaul.ca/sitemap.xml
+Sitemap: https://oscarsaul.me/sitemap.xml
